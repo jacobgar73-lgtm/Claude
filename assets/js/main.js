@@ -41,6 +41,7 @@
   // Reveal on scroll
   var items = document.querySelectorAll(".reveal");
   if ("IntersectionObserver" in window && !reduce) {
+    document.documentElement.classList.add("js-motion");
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
         if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); }
