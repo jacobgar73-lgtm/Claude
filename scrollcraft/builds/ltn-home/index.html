@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="en" data-draft>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Love Thy Neighbor · Neighbors helping neighbors in the Rio Grande Valley</title>
+<meta name="description" content="A faith-based nonprofit in the Lower Rio Grande Valley. Volunteers, churches and local businesses repairing homes and keeping company with our seniors.">
+<link rel="icon" href="../../../assets/img/heart.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Public+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="scrollcraft.css">
+<style>
+  /* Paper, blue-black ink, and the logo's red. The red is the brand's own
+     colour, so it is earned; the paper is a cool newsprint rather than the
+     cream-and-brass default every warm brand reaches for. */
+  :root {
+    --sc-canvas:     #F2F2EE;
+    --sc-surface:    #FAFAF7;
+    --sc-ink:        #1C1B22;
+    --sc-ink-soft:   #55535D;
+    --sc-accent:     #B4232B;
+    --sc-accent-ink: #FFF8F6;
+    --sc-font-display: "Newsreader", Georgia, "Times New Roman", serif;
+    --sc-font-text:    "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --sc-shadow-color: 240 10% 20%;
+    --sc-r-sm: 2px;
+
+    --paper-2: #E7E8E3;
+    --night:   #141318;
+    --brick:   #7C161C;
+    --folio-w: 12.5rem;
+    --pad: clamp(4.5rem, 10vw, 9rem);
+  }
+
+  /* Each chapter lands on its own ground and stays there: hard cuts, no drift.
+     Restating `color` with the token, or inherited text keeps the old ink. */
+  .ground-paper   { background: var(--sc-canvas); }
+  .ground-paper-2 { background: var(--paper-2); --sc-canvas: var(--paper-2); }
+  .ground-night {
+    --sc-canvas: var(--night); --sc-ink: #EEEBE6; --sc-ink-soft: #ABA7B1;
+    --sc-accent: #F2726A; --sc-accent-ink: #141318;
+    --sc-hairline: color-mix(in oklab, #EEEBE6 14%, transparent);
+    background: var(--night); color: var(--sc-ink);
+  }
+  .ground-brick {
+    --sc-canvas: var(--brick); --sc-ink: #FBF1EE; --sc-ink-soft: #EBC9C4;
+    --sc-accent: #FBF1EE; --sc-accent-ink: var(--brick);
+    --sc-hairline: color-mix(in oklab, #FBF1EE 22%, transparent);
+    background: var(--brick); color: var(--sc-ink);
+  }
+
+  body { font-size: clamp(1.02rem, 0.98rem + 0.2vw, 1.12rem); }
+  main, .masthead { padding-left: var(--folio-w); }
+  .col { max-width: 72rem; margin-inline: auto; padding-inline: clamp(1.25rem, 4.5vw, 4.5rem); }
+
+  /* Newsreader carries both the display voice and the long prose, which is
+     what a printed feature does. Public Sans is the civic sans for labels,
+     captions and the folio: a typeface built for public service. */
+  .display { font-family: var(--sc-font-display); font-weight: 400; font-optical-sizing: auto; letter-spacing: -0.022em; line-height: 1.02; text-wrap: balance; margin: 0; }
+  .prose p { font-family: var(--sc-font-display); font-size: clamp(1.14rem, 1.06rem + 0.3vw, 1.3rem); line-height: 1.58; color: var(--sc-ink); max-width: 36em; margin: 0; text-wrap: pretty; }
+  .prose p + p { margin-top: 1.1em; }
+  .dropcap::first-letter { float: left; font-size: 4.1em; line-height: 0.84; padding: 0.06em 0.09em 0 0; color: var(--sc-accent); font-weight: 400; }
+  .label { font-family: var(--sc-font-text); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--sc-ink-soft); margin: 0; }
+  .caption { font-family: var(--sc-font-text); font-size: 0.86rem; line-height: 1.5; color: var(--sc-ink-soft); margin: 0.85rem 0 0; max-width: 34em; }
+  .caption b { color: var(--sc-ink); font-weight: 600; }
+
+  /* Calls to action are running text, not button islands. */
+  .run { font-family: var(--sc-font-display); font-size: clamp(1.2rem, 1.1rem + 0.5vw, 1.5rem); line-height: 1.45; margin: 0; max-width: 32em; }
+  .act-link { color: var(--sc-accent); font-weight: 500; text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: 0.2em; transition: color 160ms var(--sc-ease-out), text-decoration-thickness 160ms var(--sc-ease-out); white-space: nowrap; }
+  .act-link:hover { text-decoration-thickness: 3px; }
+  .act-link:active { color: var(--sc-ink); }
+  .act-link .arw { display: inline-block; transition: transform 160ms var(--sc-ease-out); }
+  @media (hover: hover) and (pointer: fine) { .act-link:hover .arw { transform: translateX(3px); } }
+
+  /* ---------------------------------------------------------- the folio --
+     No fixed bar. A margin folio: the mark, where you are, and the chapters.
+     It is the navigation, so every entry jumps. */
+  .folio {
+    position: fixed; z-index: var(--sc-z-chrome); top: 0; bottom: 0; left: 0;
+    width: var(--folio-w); padding: 1.75rem 1.5rem;
+    display: flex; flex-direction: column; gap: 1.5rem;
+    border-right: 1px solid var(--sc-hairline);
+    background: color-mix(in oklab, var(--sc-canvas) 100%, transparent);
+    transition: background-color 240ms var(--sc-ease-out), color 240ms var(--sc-ease-out), border-color 240ms var(--sc-ease-out);
+  }
+  .folio[data-ground="night"] { background: var(--night); color: #EEEBE6; border-color: #2A2930; --sc-ink-soft: #ABA7B1; --sc-accent: #F2726A; }
+  .folio[data-ground="brick"] { background: var(--brick); color: #FBF1EE; border-color: #93323A; --sc-ink-soft: #EBC9C4; --sc-accent: #FBF1EE; }
+  .folio[data-ground="paper-2"] { background: var(--paper-2); }
+  .folio__home { display: block; text-decoration: none; }
+  .folio__name { font-family: var(--sc-font-display); font-size: 1.12rem; line-height: 1.12; letter-spacing: -0.01em; margin: 0.9rem 0 0; }
+  .folio__now { margin-top: auto; }
+  .folio__num { font-family: var(--sc-font-display); font-style: italic; font-size: 2.4rem; line-height: 1; margin: 0.35rem 0 0.2rem; }
+  .folio__title { font-family: var(--sc-font-display); font-size: 1.02rem; line-height: 1.3; margin: 0; min-height: 2.6em; }
+  .folio ol { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.15rem; }
+  .folio ol a { display: flex; gap: 0.6rem; padding: 0.3rem 0; font-size: 0.86rem; text-decoration: none; color: var(--sc-ink-soft); transition: color 160ms var(--sc-ease-out); }
+  .folio ol a span:first-child { font-family: var(--sc-font-display); font-style: italic; width: 1.4rem; flex: none; }
+  .folio ol a:hover, .folio ol a[aria-current="true"] { color: inherit; }
+  .folio ol a[aria-current="true"] span:last-child { text-decoration: underline; text-underline-offset: 0.25em; }
+  .folio__refer { font-size: 0.9rem; font-weight: 600; color: var(--sc-accent); text-underline-offset: 0.25em; }
+  .folio__menu { display: none; }
+
+  /* -------------------------------------------- signature: the two hands --
+     The mark is split along the clasp into the fist and the open hand. Each
+     half is offset by --gap (0..1); the page writes it from scroll. At 0 they
+     sit in exact lockup and the heart is whole. */
+  .hands { position: relative; width: 100%; aspect-ratio: 600 / 569; }
+  .hands img { position: absolute; inset: 0; width: 100%; height: 100%; max-width: none; will-change: transform; }
+  .hands__l { transform: translate3d(calc(var(--gap, 1) * -1 * var(--reach, 40%)), calc(var(--gap, 1) * 6%), 0) rotate(calc(var(--gap, 1) * -9deg)); transform-origin: 10% 60%; }
+  .hands__r { transform: translate3d(calc(var(--gap, 1) * var(--reach, 40%)), calc(var(--gap, 1) * -4%), 0) rotate(calc(var(--gap, 1) * 9deg)); transform-origin: 90% 60%; }
+  .folio .hands { width: 4.25rem; --reach: 26%; margin-left: 0.85rem; }
+  .ground-night .hands img, .folio[data-ground="night"] .hands img,
+  .folio[data-ground="brick"] .hands img, .ground-brick .hands img { filter: brightness(0) invert(1); }
+  .folio[data-ground="night"] .hands img { filter: brightness(0) saturate(100%) invert(58%) sepia(43%) saturate(1500%) hue-rotate(320deg) brightness(102%); }
+
+  /* ------------------------------------------------------------ masthead -- */
+  .masthead { border-bottom: 1px solid var(--sc-hairline); }
+  .masthead .col { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; min-height: 4.25rem; }
+  .masthead nav ul { display: flex; flex-wrap: wrap; gap: 0.25rem 1.6rem; list-style: none; margin: 0; padding: 0; }
+  .masthead nav a { font-size: 0.9rem; text-decoration: none; color: var(--sc-ink-soft); padding: 0.4rem 0; transition: color 160ms var(--sc-ease-out); }
+  .masthead nav a:hover { color: var(--sc-ink); }
+  .masthead nav a.is-key { color: var(--sc-accent); font-weight: 600; }
+
+  /* ---------------------------------------------------------- title page -- */
+  .title { min-height: calc(100svh - 4.25rem); display: flex; align-items: center; padding-block: clamp(3rem, 8vh, 6rem); }
+  .title__grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+  .title h1 { font-size: clamp(3rem, 1.6rem + 5.4vw, 6.6rem); max-width: 11.5em; letter-spacing: -0.03em; line-height: 0.98; }
+  .title h1 em { font-style: italic; color: var(--sc-accent); }
+  .title__deck { font-family: var(--sc-font-display); font-size: clamp(1.25rem, 1.1rem + 0.7vw, 1.75rem); line-height: 1.38; max-width: 28em; margin: 0; color: var(--sc-ink-soft); text-wrap: pretty; }
+  .title__rule { width: 4rem; height: 2px; background: var(--sc-accent); border: 0; margin: 0; }
+
+  /* --------------------------------------------------------- chapter I --- */
+  .chapter { padding-block: var(--pad); }
+  .chapter__head { display: grid; gap: 0.9rem; margin-bottom: clamp(2.5rem, 5vw, 4.5rem); }
+  .chapter__head h2 { font-size: clamp(2.3rem, 1.5rem + 3vw, 4.4rem); max-width: 14em; }
+  .spread { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(2rem, 5vw, 5.5rem); align-items: start; }
+  .plate { margin: 0; }
+  .plate__frame { overflow: hidden; background: var(--paper-2); }
+  .plate__frame img { width: 100%; height: auto; }
+  .plate--tall .plate__frame { aspect-ratio: 4 / 5; }
+  .plate--tall .plate__frame img { height: 118%; width: 100%; object-fit: cover; margin-top: -9%; }
+  .pull { font-family: var(--sc-font-display); font-style: italic; font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.2rem); line-height: 1.25; margin: clamp(2.5rem, 5vw, 4rem) 0 0; padding-top: 1.4rem; border-top: 1px solid var(--sc-hairline); max-width: 22em; }
+
+  /* -------------------------------------------------------- intertitle --- */
+  .intertitle { min-height: 100svh; display: flex; align-items: flex-end; padding-block: var(--pad); }
+  .intertitle__inner { padding-bottom: 6vh; }
+  .intertitle__num { font-family: var(--sc-font-display); font-style: italic; font-size: clamp(5rem, 3rem + 9vw, 11rem); line-height: 1; color: var(--sc-accent); margin: 0 0 0.25rem; padding: 0.06em 0.04em 0.04em; }
+  .intertitle h2 { font-size: clamp(2.5rem, 1.6rem + 3.4vw, 5rem); }
+
+  /* -------------------------------------------------- chapter II: film --- */
+  .film { display: grid; height: 100%; max-width: 92rem; align-content: center; grid-template-columns: minmax(0, 9fr) minmax(0, 3.4fr); gap: clamp(1.5rem, 3.5vw, 4rem); align-items: end; padding-block: 2rem; }
+  .film__plate { margin: 0; }
+  .film__frame { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: #000; box-shadow: var(--sc-e3); }
+  .film__still { display: none; }
+  .film__notes { position: relative; min-height: 19rem; align-self: end; }
+  .film__notes > * { position: absolute; left: 0; right: 0; bottom: 0; margin: 0; }
+  .film__note { font-family: var(--sc-font-display); font-size: clamp(1.2rem, 1.05rem + 0.5vw, 1.5rem); line-height: 1.45; text-wrap: pretty; }
+  .film__peak { font-size: clamp(1.75rem, 1.3rem + 1.6vw, 2.75rem); line-height: 1.14; letter-spacing: -0.02em; }
+  .film__peak em { color: var(--sc-accent); }
+
+  /* ------------------------------------------------ chapter III: work ---- */
+  .index { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--sc-hairline-strong); }
+  .entry { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr) minmax(0, 4fr); gap: clamp(1.25rem, 3vw, 3rem); padding-block: clamp(1.75rem, 3.5vw, 3rem); border-bottom: 1px solid var(--sc-hairline-strong); align-items: start; }
+  .entry h3 { font-size: clamp(1.75rem, 1.3rem + 1.6vw, 2.75rem); }
+  .entry__kind { margin-bottom: 0.6rem; }
+  .entry p { margin: 0; color: var(--sc-ink-soft); max-width: 34em; }
+  .entry p + p { margin-top: 0.9rem; }
+  .entry .fact { color: var(--sc-ink); font-weight: 500; }
+  .entry__img { margin: 0; overflow: hidden; aspect-ratio: 4 / 3; background: var(--sc-canvas); }
+  .entry__img img { width: 100%; height: 100%; object-fit: cover; }
+  .entry a { font-size: 0.95rem; }
+
+  /* -------------------------------------------- chapter IV: neighbors ---- */
+  .ledger { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid var(--sc-hairline-strong); border-bottom: 1px solid var(--sc-hairline-strong); margin-block: clamp(2.5rem, 5vw, 4rem); }
+  .ledger > div { padding: 1.4rem 1.25rem 1.5rem 0; }
+  .ledger > div + div { padding-left: 1.25rem; border-left: 1px solid var(--sc-hairline); }
+  .ledger .n { display: block; font-family: var(--sc-font-display); font-size: clamp(2.6rem, 1.8rem + 2.6vw, 4.2rem); line-height: 1; letter-spacing: -0.03em; font-variant-numeric: lining-nums tabular-nums; }
+  .ledger .what { display: block; margin-top: 0.55rem; font-size: 0.92rem; color: var(--sc-ink-soft); line-height: 1.4; }
+  .tk { display: none; }
+  [data-draft] .tk { display: inline-block; vertical-align: super; margin-left: 0.3em; padding: 0.05em 0.35em; font: 600 0.62rem/1.3 var(--sc-font-text); letter-spacing: 0.08em; color: var(--sc-accent-ink); background: var(--sc-accent); border-radius: 2px; }
+  .partners { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(2rem, 5vw, 5rem); align-items: start; }
+  .names { columns: 2; column-gap: 2.5rem; list-style: none; margin: 0; padding: 0; }
+  .names li { break-inside: avoid; padding: 0.7rem 0; border-bottom: 1px solid var(--sc-hairline); font-family: var(--sc-font-display); font-size: 1.22rem; line-height: 1.3; }
+  .names li small { display: block; font-family: var(--sc-font-text); font-size: 0.8rem; color: var(--sc-ink-soft); margin-top: 0.15rem; }
+
+  /* ----------------------------------------------------------- colophon -- */
+  .colophon { min-height: 100svh; display: flex; flex-direction: column; padding-block: var(--pad) 2.5rem; }
+  .colophon__main { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); gap: clamp(2rem, 6vw, 6rem); align-items: center; flex: 1; }
+  .colophon h2 { font-size: clamp(2.6rem, 1.6rem + 4vw, 5.6rem); line-height: 1; letter-spacing: -0.03em; }
+  .colophon .run { margin-top: 2rem; color: var(--sc-ink-soft); }
+  .colophon .run .act-link { color: var(--sc-ink); font-size: 1.12em; }
+  .colophon .hands { --reach: 46%; max-width: 22rem; margin-inline: auto; width: 100%; }
+  .colophon__fine { margin-top: clamp(3rem, 8vh, 6rem); padding-top: 1.5rem; border-top: 1px solid var(--sc-hairline); display: flex; flex-wrap: wrap; gap: 0.75rem 2.5rem; font-size: 0.88rem; color: var(--sc-ink-soft); }
+  .colophon__fine a { color: var(--sc-ink); }
+  .colophon__fine p { margin: 0; }
+
+  /* -------------------------------------------------------------- phone --- */
+  @media (max-width: 900px) {
+    :root { --folio-w: 0px; }
+    main { padding-bottom: 3.5rem; }
+    .folio { top: auto; right: 0; width: auto; height: 3.5rem; padding: 0 0 0 1rem; flex-direction: row; align-items: center; gap: 0.85rem; border-right: 0; border-top: 1px solid var(--sc-hairline); padding-bottom: env(safe-area-inset-bottom); height: calc(3.5rem + env(safe-area-inset-bottom)); }
+    .folio .hands { width: 2.1rem; }
+    .folio__name, .folio__chapters, .folio__refer, .folio .label { display: none; }
+    .folio__home { flex: none; }
+    .folio__now { margin: 0; flex: 1; min-width: 0; display: flex; align-items: baseline; gap: 0.5rem; }
+    .folio__num { font-size: 1.3rem; margin: 0; }
+    .folio__title { min-height: 0; font-size: 0.98rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .folio__menu { display: block; height: 100%; padding: 0 1.1rem; border: 0; border-left: 1px solid var(--sc-hairline); background: none; font-size: 0.86rem; font-weight: 600; cursor: pointer; }
+    .folio.is-open { height: auto; flex-wrap: wrap; padding-top: 1rem; }
+    .folio.is-open .folio__chapters { display: block; order: 5; flex-basis: 100%; padding: 0.5rem 1rem 1rem 0; }
+    .folio.is-open .folio__refer { display: block; order: 6; padding: 0 0 1rem; }
+    .folio ol a { padding: 0.55rem 0; font-size: 1rem; }
+
+    .masthead .col { flex-direction: column; align-items: flex-start; gap: 0.6rem; padding-block: 1rem; }
+    .masthead nav ul { gap: 0.1rem 1.1rem; }
+    .title { min-height: 0; padding-block: 3.5rem 4.5rem; }
+    .title h1 { font-size: clamp(2.6rem, 1.5rem + 6vw, 3.4rem); }
+    .spread, .partners, .colophon__main { grid-template-columns: minmax(0, 1fr); }
+    .plate--tall { max-width: 26rem; }
+    .entry { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
+    .entry__img { order: -1; aspect-ratio: 16 / 9; }
+    .ledger { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .ledger > div:nth-child(3) { border-left: 0; padding-left: 0; }
+    .ledger > div:nth-child(n+3) { border-top: 1px solid var(--sc-hairline); }
+    .names { columns: 1; }
+    .film { grid-template-columns: minmax(0, 1fr); align-content: center; gap: 1.25rem; padding-block: 1rem 4.5rem; }
+    .film__frame { aspect-ratio: 4 / 3; }
+    .film__notes { min-height: 13.5rem; align-self: start; }
+    .film__notes > * { top: 0; bottom: auto; }
+    .colophon .hands { max-width: 11rem; margin-inline: 0; order: -1; }
+    .colophon { min-height: 0; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hands img { transform: none !important; }
+    .film__frame video, .film__frame .sc-stage__poster { display: none; }
+    .film__still { display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  }
+</style>
+</head>
+<body>
+
+<a class="label" href="#main" style="position:absolute;left:-999px;top:0" onfocus="this.style.left='1rem'" onblur="this.style.left='-999px'">Skip to content</a>
+
+<aside class="folio" aria-label="Chapters" data-ground="paper">
+  <a class="folio__home" href="#top" aria-label="Love Thy Neighbor, back to the title page">
+    <div class="hands" aria-hidden="true">
+      <img class="hands__l" src="assets/hand-left.webp" alt="" width="300" height="285">
+      <img class="hands__r" src="assets/hand-right.webp" alt="" width="300" height="285">
+    </div>
+    <p class="folio__name">Love Thy Neighbor</p>
+  </a>
+  <div class="folio__now" aria-live="polite">
+    <p class="label">Now reading</p>
+    <p class="folio__num" data-folio-num>&nbsp;</p>
+    <p class="folio__title" data-folio-title>Neighbors helping neighbors</p>
+  </div>
+  <nav class="folio__chapters" id="chapters" aria-label="Chapters on this page">
+    <ol>
+      <li><a href="#need"><span>I</span><span>The need</span></a></li>
+      <li><a href="#saturday"><span>II</span><span>A Saturday in Harlingen</span></a></li>
+      <li><a href="#work"><span>III</span><span>The work</span></a></li>
+      <li><a href="#neighbors"><span>IV</span><span>The neighbors</span></a></li>
+    </ol>
+  </nav>
+  <a class="folio__refer" href="../../../refer.html">Refer a neighbor</a>
+  <button class="folio__menu" type="button" aria-expanded="false" aria-controls="chapters">Contents</button>
+</aside>
+
+<header class="masthead ground-paper">
+  <div class="col">
+    <p class="label">Lower Rio Grande Valley, Texas</p>
+    <nav aria-label="Site">
+      <ul>
+        <li><a href="../../../about.html">About</a></li>
+        <li><a href="../../../programs.html">Programs</a></li>
+        <li><a href="../../../get-involved.html">Volunteer</a></li>
+        <li><a href="../../../partners.html">Partners</a></li>
+        <li><a href="../../../donate.html">Donate</a></li>
+        <li><a class="is-key" href="../../../refer.html">Refer a neighbor</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- TITLE PAGE: type on paper, no media above the fold. -->
+  <section id="top" class="title ground-paper" data-chapter="" data-chapter-title="Neighbors helping neighbors" data-ground="paper">
+    <div class="col title__grid">
+      <h1 class="display">Nobody on this street gets <em>forgotten.</em></h1>
+      <hr class="title__rule">
+      <p class="title__deck">Love Thy Neighbor brings Valley volunteers, churches and businesses together to repair homes and keep our seniors company.</p>
+      <p class="run">Know a senior who needs a hand? <a class="act-link" href="../../../refer.html">Refer a neighbor <span class="arw" aria-hidden="true">→</span></a></p>
+    </div>
+  </section>
+
+  <!-- I. THE NEED: flow spread, the photograph moves inside its own frame. -->
+  <section id="need" class="chapter ground-paper" data-sc-act="flow" data-chapter="I" data-chapter-title="The need" data-ground="paper">
+    <div class="col">
+      <header class="chapter__head" data-sc-in>
+        <p class="label">Chapter I</p>
+        <h2 class="display">Some of our neighbors have been waiting a long time for a knock at the door.</h2>
+      </header>
+      <div class="spread">
+        <div class="prose" data-sc-in>
+          <p class="dropcap">Many seniors in Cameron County live in homes that have slowly fallen into disrepair: a porch that gives, a yard that got away, a railing that was never put in. Bending down got hard, and then the help stopped coming.</p>
+          <p>Loneliness is the harder part. In adult day cares, nursing homes and hospice centers across the Valley, there are people who go weeks without a visitor who came only for them.</p>
+          <p>We are a faith-based nonprofit, and we answer both the same way: by showing up, as neighbors, and coming back.</p>
+          <blockquote class="pull">“True change begins when faith turns into action.”</blockquote>
+        </div>
+        <figure class="plate plate--tall" data-sc-in>
+          <div class="plate__frame"><img src="assets/doorstep-visit.webp" width="800" height="1200" alt="A senior man in a red shirt smiles at his front door as two volunteers arrive holding white flowers" data-sc-parallax="-0.9"></div>
+          <figcaption class="caption"><b>A Valentine's visit.</b> Volunteers bringing flowers to a neighbor at his front door.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Authored silence before the peak: a full-stop intertitle, nothing else. -->
+  <section class="intertitle ground-night" data-sc-act="flow" data-chapter="II" data-chapter-title="A Saturday in Harlingen" data-ground="night">
+    <div class="col intertitle__inner">
+      <div data-sc-reveal="up" data-sc-reveal-at="0.22 0.52">
+        <p class="intertitle__num" aria-hidden="true">II</p>
+        <h2 class="display">A Saturday in Harlingen</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- II. THE PEAK. The film sits in its own frame with a caption column;
+       it never runs under type. Largest span on the page. -->
+  <section id="saturday" class="ground-night" data-sc-act="scrub" data-sc-span="3.2" data-sc-dwell="0.3" data-chapter="II" data-chapter-title="A Saturday in Harlingen" data-ground="night" aria-label="Chapter II, A Saturday in Harlingen">
+    <div data-sc-stage>
+      <div class="col film">
+        <figure class="film__plate">
+          <div class="film__frame">
+            <img class="sc-stage__poster" src="assets/story-first.webp" alt="" width="1280" height="720">
+            <video data-sc-scrub data-sc-src="assets/story.mp4" data-sc-src-mobile="assets/story-m.mp4" muted playsinline preload="none" aria-label="Volunteers clear a senior's yard in Harlingen; she comes to her door, then sits on her porch while they work"></video>
+            <img class="film__still" src="assets/story-porch.webp" alt="A senior woman sits on her porch while volunteers in maroon shirts work in her yard at sunset" width="1280" height="720" loading="lazy">
+          </div>
+          <figcaption class="caption"><b>Restore, Renew &amp; Rebuild, Phase 1.</b> A yard cleanup in Harlingen, filmed by Love Thy Neighbor.</figcaption>
+        </figure>
+        <div class="film__notes">
+          <p class="film__note" data-sc-cue="0 0.34 0 0.18">The Restore crew starts with the yard: the brush, the leaves, the things that pile up once bending down gets hard.</p>
+          <p class="film__note" data-sc-cue="0.3 0.6 0.2 0.18">Then someone knocks on the screen door, and the work slows down for a minute.</p>
+          <p class="film__peak display" data-sc-cue="0.56 1 0.16 0.1">The repairs are why we come. <em>The porch is why we stay.</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- III. THE WORK: an index, one schema per entry, labelled with fact. -->
+  <section id="work" class="chapter ground-paper-2" data-chapter="III" data-chapter-title="The work" data-ground="paper-2">
+    <div class="col">
+      <header class="chapter__head" data-sc-in>
+        <p class="label">Chapter III</p>
+        <h2 class="display">Three ways we show up: body, heart and spirit.</h2>
+      </header>
+      <ol class="index" data-sc-in data-sc-stagger="70">
+        <li class="entry">
+          <div><p class="label entry__kind">Home</p><h3 class="display">Restore, Renew &amp; Rebuild</h3></div>
+          <div>
+            <p>Junk removal, yard cleanups, painting, porch repair and accessibility fixes like ramps and railings, so seniors can live safely and with dignity.</p>
+            <p><span class="fact">Now in Phase 1 (Restore) in Harlingen, TX.</span> <a class="act-link" href="../../../programs.html#restore">About the program</a></p>
+          </div>
+          <figure class="entry__img"><img src="assets/hero-poster.webp" width="1280" height="720" alt="Two volunteers in maroon shirts pull weeds beside a palm tree in front of a small house" loading="lazy"></figure>
+        </li>
+        <li class="entry">
+          <div><p class="label entry__kind">Fellowship</p><h3 class="display">Hearts &amp; Hands Fellowship</h3></div>
+          <div>
+            <p>Crafts, music, prayer and conversation, brought every month to adult day cares, nursing homes and hospice centers.</p>
+            <p><span class="fact">Monthly visits across the Valley.</span> <a class="act-link" href="../../../programs.html#hearts">About the program</a></p>
+          </div>
+          <figure class="entry__img"><img src="assets/seniors-crafts.webp" width="1600" height="1067" alt="Seniors around a round table making valentines at a fellowship event" loading="lazy"></figure>
+        </li>
+        <li class="entry">
+          <div><p class="label entry__kind">Friendship</p><h3 class="display">Adopt-A-Neighbor</h3></div>
+          <div>
+            <p>Each volunteer is matched with one senior for letters, calls, coffee and care packages, with LTN walking alongside in guidance and prayer.</p>
+            <p><span class="fact">One volunteer, one senior, monthly contact.</span> <a class="act-link" href="../../../programs.html#adopt">About the program</a></p>
+          </div>
+          <figure class="entry__img"><img src="assets/senior-valentine.webp" width="800" height="1200" alt="A smiling senior man holds up a handmade valentine" loading="lazy" style="object-position:50% 40%"></figure>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- IV. THE NEIGHBORS: real names in type, the numbers in a ledger. -->
+  <section id="neighbors" class="chapter ground-paper" data-chapter="IV" data-chapter-title="The neighbors" data-ground="paper">
+    <div class="col">
+      <header class="chapter__head" data-sc-in>
+        <p class="label">Chapter IV</p>
+        <h2 class="display">None of it happens alone.</h2>
+      </header>
+      <div class="prose" data-sc-in><p>Love Thy Neighbor is run by local volunteers. Churches lend hands, businesses donate supplies and space, and families tell us who needs help. Every gift goes straight to work for a senior in the Valley.</p></div>
+
+      <div class="ledger" data-sc-in data-sc-stagger="70">
+        <div><span class="n"><span data-sc-count="0 3">3</span></span><span class="what">programs serving body, heart and spirit</span></div>
+        <div><span class="n"><span data-sc-count="0 9">9</span></span><span class="what">neighbors on our leadership team</span></div>
+        <div><span class="n"><span data-sc-count="0 120">120</span><sup class="tk" title="Placeholder figure: replace before launch">TK</sup></span><span class="what">seniors visited this year</span></div>
+        <div><span class="n"><span data-sc-count="0 1,500">1,500</span><sup class="tk" title="Placeholder figure: replace before launch">TK</sup></span><span class="what">volunteer hours given</span></div>
+      </div>
+
+      <div class="partners">
+        <figure class="plate" data-sc-in>
+          <div class="plate__frame"><img src="assets/volunteers-flowers.webp" width="1600" height="1067" alt="Three young volunteers stand on a lawn holding flowers and handmade cards" loading="lazy"></div>
+          <figcaption class="caption"><b>On the way to a visit.</b> Volunteers with flowers and cards for seniors.</figcaption>
+        </figure>
+        <div>
+          <p class="label" style="margin-bottom:0.6rem">Made possible by</p>
+          <ul class="names" data-sc-in data-sc-stagger="40">
+            <li>Amigos del Valle<small>Community partner</small></li>
+            <li>The Pursuit Church<small>Harlingen</small></li>
+            <li>Jade Candle Co.<small>Local business</small></li>
+            <li>Danny Visualz<small>Photography &amp; film</small></li>
+            <li>Queen City Barbershop<small>Mercedes</small></li>
+            <li>Yeshua by Yesenia<small>Harlingen</small></li>
+            <li>Smile Station Photobooth<small>Rio Grande Valley</small></li>
+            <li>BannerBuzz<small>Advertising partner</small></li>
+          </ul>
+          <p class="run" style="margin-top:2rem;font-size:1.15rem">Want your church or business on this list? <a class="act-link" href="../../../partners.html">Become a partner</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLOPHON: the close resolves. One question, one action, the hands meet. -->
+  <section id="refer" class="colophon ground-brick" data-chapter="" data-chapter-title="Refer a neighbor" data-ground="brick">
+    <div class="col colophon__main">
+      <div data-sc-in>
+        <h2 class="display">Know a senior who could use a helping hand?</h2>
+        <p class="run">Tell us about them. Our outreach team reviews every referral and reaches out with care. Everything you share stays confidential. <a class="act-link" href="../../../refer.html">Refer a neighbor <span class="arw" aria-hidden="true">→</span></a></p>
+        <p class="run" style="margin-top:1.25rem;font-size:1.08rem">Or <a href="../../../get-involved.html">volunteer</a>, <a href="../../../partners.html">partner with us</a>, or <a href="../../../donate.html">give from our wish lists</a>.</p>
+      </div>
+      <div class="hands hands--close" aria-hidden="true">
+        <img class="hands__l" src="assets/hand-left.webp" alt="" width="300" height="285">
+        <img class="hands__r" src="assets/hand-right.webp" alt="" width="300" height="285">
+      </div>
+    </div>
+    <footer class="col colophon__fine">
+      <p>Love Thy Neighbor, a nonprofit organization. Lower Rio Grande Valley, Texas.</p>
+      <p><a href="tel:+19563203378">(956) 320-3378</a></p>
+      <p><a href="mailto:Info@LtnTexas.org">Info@LtnTexas.org</a></p>
+      <p><a href="https://www.facebook.com/lovethyneighbor">Facebook</a> · <a href="https://www.instagram.com/lovethyneighbortx">Instagram</a></p>
+    </footer>
+  </section>
+
+</main>
+
+<script src="scrollcraft.js"></script>
+<script>
+  // Browsers without an H.264 decoder (some Linux builds of Firefox and
+  // Chromium) get the VP9 encode of the same dense-keyframe clip.
+  (function () {
+    var probe = document.createElement('video');
+    if (probe.canPlayType('video/mp4; codecs="avc1.640028"')) return;
+    if (!probe.canPlayType('video/webm; codecs="vp9"')) return;
+    document.querySelectorAll('video[data-sc-src]').forEach(function (v) {
+      ['data-sc-src', 'data-sc-src-mobile'].forEach(function (k) {
+        var s = v.getAttribute(k); if (s) v.setAttribute(k, s.replace(/\.mp4$/, '.webm'));
+      });
+    });
+  })();
+  // Reduced motion holds one still frame, so it gets less pinned scroll.
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.getElementById('saturday').setAttribute('data-sc-span', '2');
+  }
+  ScrollCraft.mount(document.body);
+
+  (function () {
+    var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var folio = document.querySelector('.folio');
+    var numEl = folio.querySelector('[data-folio-num]');
+    var titleEl = folio.querySelector('[data-folio-title]');
+    var links = folio.querySelectorAll('ol a');
+    var chapters = document.querySelectorAll('[data-chapter-title]');
+    var folioHands = folio.querySelector('.hands');
+    var closeHands = document.querySelector('.hands--close');
+    var colophon = document.getElementById('refer');
+
+    // Signature: the two hands of the mark close the gap as you read. The
+    // folio pair tracks the whole page; the colophon pair tracks its own
+    // arrival. Both reach exact lockup a little before the end of the
+    // scroll, so the joined heart holds instead of landing on the last pixel.
+    function ease(t) { return 1 - Math.pow(1 - t, 3); }
+    function clamp(t) { return t < 0 ? 0 : t > 1 ? 1 : t; }
+    var lastA = -1, lastB = -1;
+    function hands() {
+      var max = document.documentElement.scrollHeight - innerHeight;
+      var a = reduce ? 0 : 1 - ease(clamp(scrollY / Math.max(1, max * 0.94)));
+      var r = colophon.getBoundingClientRect();
+      var b = reduce ? 0 : 1 - ease(clamp((innerHeight - r.top) / (Math.min(r.height, innerHeight) * 0.92)));
+      a = Math.round(a * 1000) / 1000; b = Math.round(b * 1000) / 1000;
+      if (a !== lastA) { folioHands.style.setProperty('--gap', a); lastA = a; }
+      if (b !== lastB) { closeHands.style.setProperty('--gap', b); lastB = b; }
+    }
+    var ticking = false;
+    function onScroll() { if (!ticking) { ticking = true; requestAnimationFrame(function () { ticking = false; hands(); folioState(); }); } }
+
+    // Folio: which chapter is under the reading line, and which ground the
+    // margin should take so it never sits as a paper strip beside a dark page.
+    var current = null;
+    function folioState() {
+      var line = innerHeight * 0.4, hit = chapters[0];
+      for (var i = 0; i < chapters.length; i++) { if (chapters[i].getBoundingClientRect().top <= line) hit = chapters[i]; }
+      if (hit === current) return;
+      current = hit;
+      var n = hit.getAttribute('data-chapter');
+      numEl.innerHTML = n || '&nbsp;';
+      titleEl.textContent = hit.getAttribute('data-chapter-title');
+      folio.setAttribute('data-ground', hit.getAttribute('data-ground') || 'paper');
+      var id = n && document.querySelector('[data-chapter="' + n + '"][id]');
+      links.forEach(function (a) { a.setAttribute('aria-current', id && a.getAttribute('href') === '#' + id.id ? 'true' : 'false'); });
+    }
+
+    // Phone: the folio is a strip along the bottom with a contents drawer.
+    var menu = folio.querySelector('.folio__menu');
+    menu.addEventListener('click', function () {
+      var open = folio.classList.toggle('is-open');
+      menu.setAttribute('aria-expanded', open ? 'true' : 'false');
+      menu.textContent = open ? 'Close' : 'Contents';
+    });
+    links.forEach(function (a) { a.addEventListener('click', function () {
+      folio.classList.remove('is-open'); menu.setAttribute('aria-expanded', 'false'); menu.textContent = 'Contents';
+    }); });
+    addEventListener('keydown', function (e) { if (e.key === 'Escape' && folio.classList.contains('is-open')) menu.click(); });
+
+    // Keyboard: a focused link must never sit inside a reveal that has not
+    // fired yet. Open its reveal (and its siblings) the moment it is focused.
+    document.addEventListener('focusin', function (e) {
+      var n = e.target;
+      while (n && n !== document.body) {
+        if (n.hasAttribute && (n.hasAttribute('data-sc-in') || (n.parentElement && n.parentElement.hasAttribute('data-sc-stagger')))) n.classList.add('sc-in');
+        n = n.parentElement;
+      }
+    });
+
+    addEventListener('scroll', onScroll, { passive: true });
+    addEventListener('resize', onScroll);
+    hands(); folioState();
+  })();
+</script>
+</body>
+</html>
