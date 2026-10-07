@@ -80,3 +80,48 @@ partners and **9** leadership members (all counted from the current site). Two
 are filler and **must be replaced before launch**: seniors visited and volunteer
 hours. Each one is marked `TK` (the print convention for "to come") while
 `<html data-draft>` is set. Remove the attribute once real figures are in.
+
+## Revision 2 (client feedback)
+
+[client] "not a fan" of the porch line; not big on "A Saturday in Harlingen"
+("we're only serving Harlingen right now but want to expand as we grow"); "no
+need to mark chapters"; "get some stats to back up the need at the front ...
+find the most heartbreaking stats"; not big on "Nobody on this street gets
+forgotten"; "lean more into what is Love Thy Neighbor"; "don't lock in on one
+program for the home page, we want to do a lot".
+
+Changes:
+
+- **Opening:** "Love thy neighbor. Then show up." The text below it names all
+  three programs.
+- **Chapter numbers and labels removed.** The folio lists section titles only.
+- **Evidence section first.** Five figures plus one growth projection, each
+  footnoted to its primary source:
+  1. 23% of Cameron County residents 65+ live below the poverty line (U.S.
+     10.8%). ACS 2020-2024, S1701.
+  2. 14,511 Cameron County households are one person 65+ living alone. ACS
+     2020-2024, B11007.
+  3. Lacking social connection can raise early-death risk as much as smoking
+     up to 15 cigarettes a day. U.S. Surgeon General advisory (2023), p. 8.
+     This one is a national figure.
+  4. 1 in 4 (26.5%) Cameron County residents 65+ have serious difficulty
+     walking or climbing stairs. ACS 2020-2024, S1810.
+  5. 11,030 Cameron County residents 65+ have difficulty running errands
+     alone. ACS 2020-2024, S1810.
+  6. Growth: the Valley's 65+ population is projected to go from 175,849 (2020)
+     to 271,976 (2040). Texas Demographic Center, Vintage 2024, mid scenario,
+     four counties combined.
+
+  Process: five researchers produced 30 candidates. A fact-checker confirmed
+  every one against the primary source, and a skeptic re-checked the five that
+  were chosen. All of them held.
+- **Film:** retitled "Someone at the door". The captions now speak for all of
+  LTN's work, the credit names no single program or city, and the peak line is
+  "Everyone deserves a neighbor who comes back."
+- **Programs section:** "Body, heart and spirit." It says plainly that LTN
+  serves Harlingen and Cameron County today and plans to grow across the
+  Valley.
+
+**Revised peak sentence:** "they're raking her yard, she comes to the door,
+someone sits with her, and then it just says everyone deserves a neighbor who
+comes back."

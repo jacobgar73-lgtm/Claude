@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Love Thy Neighbor · Neighbors helping neighbors in the Rio Grande Valley</title>
-<meta name="description" content="A faith-based nonprofit in the Lower Rio Grande Valley. Volunteers, churches and local businesses repairing homes and keeping company with our seniors.">
+<meta name="description" content="Love Thy Neighbor is a faith-based, volunteer-run nonprofit in the Rio Grande Valley. We repair seniors' homes, bring fellowship to care centers, and match seniors with a friend.">
 <link rel="icon" href="../../../assets/img/heart.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -139,6 +139,26 @@
   .plate--tall .plate__frame img { height: 118%; width: 100%; object-fit: cover; margin-top: -9%; }
   .pull { font-family: var(--sc-font-display); font-style: italic; font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.2rem); line-height: 1.25; margin: clamp(2.5rem, 5vw, 4rem) 0 0; padding-top: 1.4rem; border-top: 1px solid var(--sc-hairline); max-width: 22em; }
 
+  /* ------------------------------------------------------- the evidence -- */
+  .need__lede { font-family: var(--sc-font-display); font-size: clamp(1.2rem, 1.08rem + 0.5vw, 1.5rem); line-height: 1.42; color: var(--sc-ink-soft); max-width: 34em; margin: 0.4rem 0 0; text-wrap: pretty; }
+  .facts { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--sc-hairline-strong); }
+  .fact { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 0.5rem clamp(1.5rem, 4vw, 4rem); align-items: baseline; padding-block: clamp(1.4rem, 2.8vw, 2.25rem); border-bottom: 1px solid var(--sc-hairline-strong); }
+  .fact__n { font-family: var(--sc-font-display); font-size: clamp(3rem, 2rem + 4vw, 6rem); line-height: 0.95; letter-spacing: -0.035em; margin: 0; font-variant-numeric: lining-nums tabular-nums; }
+  .fact:nth-child(3) .fact__n { color: var(--sc-accent); font-style: italic; }
+  .fact__t { font-family: var(--sc-font-display); font-size: clamp(1.15rem, 1.05rem + 0.4vw, 1.4rem); line-height: 1.42; margin: 0; max-width: 30em; text-wrap: pretty; }
+  .fn { font-family: var(--sc-font-text); font-size: 0.62em; font-weight: 600; vertical-align: super; line-height: 0; margin-left: 0.18em; color: var(--sc-accent); text-decoration: none; padding: 0 0.1em; }
+  .fn:hover { text-decoration: underline; }
+  .growing { font-family: var(--sc-font-display); font-size: clamp(1.15rem, 1.05rem + 0.4vw, 1.4rem); line-height: 1.45; max-width: 40em; margin: clamp(1.5rem, 3vw, 2.25rem) 0 0; }
+  .growing b { font-weight: 500; color: var(--sc-accent); }
+  .need__story { margin-top: clamp(4rem, 8vw, 7rem); }
+  .sources { margin-top: clamp(3.5rem, 7vw, 6rem); padding-top: 1.25rem; border-top: 1px solid var(--sc-hairline); }
+  .sources ol { margin: 0.75rem 0 0; padding-left: 1.4rem; columns: 2; column-gap: 3rem; font-size: 0.84rem; line-height: 1.5; color: var(--sc-ink-soft); }
+  .sources li { break-inside: avoid; padding: 0 0 0.6rem 0.2rem; }
+  .sources li::marker { color: var(--sc-accent); font-weight: 600; }
+  .sources li:target { color: var(--sc-ink); }
+  .sources a { color: var(--sc-ink); }
+  .sources__note { margin: 0.6rem 0 0; font-size: 0.82rem; color: var(--sc-ink-soft); }
+
   /* -------------------------------------------------------- intertitle --- */
   .intertitle { min-height: 100svh; display: flex; align-items: flex-end; padding-block: var(--pad); }
   .intertitle__inner { padding-bottom: 6vh; }
@@ -162,7 +182,7 @@
   .entry__kind { margin-bottom: 0.6rem; }
   .entry p { margin: 0; color: var(--sc-ink-soft); max-width: 34em; }
   .entry p + p { margin-top: 0.9rem; }
-  .entry .fact { color: var(--sc-ink); font-weight: 500; }
+  .entry__fact { color: var(--sc-ink); font-weight: 500; }
   .entry__img { margin: 0; overflow: hidden; aspect-ratio: 4 / 3; background: var(--sc-canvas); }
   .entry__img img { width: 100%; height: 100%; object-fit: cover; }
   .entry a { font-size: 0.95rem; }
@@ -219,6 +239,8 @@
     .ledger > div:nth-child(3) { border-left: 0; padding-left: 0; }
     .ledger > div:nth-child(n+3) { border-top: 1px solid var(--sc-hairline); }
     .names { columns: 1; }
+    .fact { grid-template-columns: minmax(0, 1fr); }
+    .sources ol { columns: 1; }
     .film { grid-template-columns: minmax(0, 1fr); align-content: center; gap: 1.25rem; padding-block: 1rem 4.5rem; }
     .film__frame { aspect-ratio: 4 / 3; }
     .film__notes { min-height: 13.5rem; align-self: start; }
@@ -253,7 +275,7 @@
   <nav class="folio__chapters" id="chapters" aria-label="Chapters on this page">
     <ol>
       <li><a href="#need">The need</a></li>
-      <li><a href="#film">FILM_TITLE</a></li>
+      <li><a href="#film">Someone at the door</a></li>
       <li><a href="#work">The work</a></li>
       <li><a href="#neighbors">The neighbors</a></li>
     </ol>
@@ -264,7 +286,7 @@
 
 <header class="masthead ground-paper">
   <div class="col">
-    <p class="label">Lower Rio Grande Valley, Texas</p>
+    <p class="label">Rio Grande Valley, Texas</p>
     <nav aria-label="Site">
       <ul>
         <li><a href="../../../about.html">About</a></li>
@@ -283,24 +305,51 @@
   <!-- TITLE PAGE: type on paper, no media above the fold. -->
   <section id="top" class="title ground-paper" data-chapter-title="Neighbors helping neighbors" data-ground="paper">
     <div class="col title__grid">
-      <h1 class="display">Nobody on this street gets <em>forgotten.</em></h1>
+      <h1 class="display">Love thy neighbor. <em>Then show&nbsp;up.</em></h1>
       <hr class="title__rule">
-      <p class="title__deck">Love Thy Neighbor brings Valley volunteers, churches and businesses together to repair homes and keep our seniors company.</p>
+      <p class="title__deck">We are a faith-based nonprofit run by volunteers. We repair seniors' homes, bring song and prayer to care centers, and match seniors with a friend who keeps calling.</p>
       <p class="run">Know a senior who needs a hand? <a class="act-link" href="../../../refer.html">Refer a neighbor <span class="arw" aria-hidden="true">→</span></a></p>
     </div>
   </section>
 
-  <!-- I. THE NEED: flow spread, the photograph moves inside its own frame. -->
+  <!-- THE NEED: the evidence comes first, then the people behind it. Every
+       figure is footnoted to its primary source at the end of the section. -->
   <section id="need" class="chapter ground-paper" data-sc-act="flow" data-chapter-title="The need" data-ground="paper">
     <div class="col">
       <header class="chapter__head" data-sc-in>
-        <h2 class="display">Some of our neighbors have been waiting a long time for a knock at the door.</h2>
+        <h2 class="display">The need is close to home.</h2>
+        <p class="need__lede">These are the latest government figures for the seniors we serve in Cameron County, and what the research says being alone costs them.</p>
       </header>
-      <div class="spread">
+
+      <ol class="facts" data-sc-in data-sc-stagger="70">
+        <li class="fact">
+          <p class="fact__n">23%</p>
+          <p class="fact__t">of Cameron County residents 65 and older live below the poverty line. Nationally, the rate is 10.8%.<a class="fn" href="#src-1" aria-label="Source 1">1</a></p>
+        </li>
+        <li class="fact">
+          <p class="fact__n">14,511</p>
+          <p class="fact__t">households in Cameron County are one person, 65 or older, living alone.<a class="fn" href="#src-2" aria-label="Source 2">2</a></p>
+        </li>
+        <li class="fact">
+          <p class="fact__n">Up to 15</p>
+          <p class="fact__t">cigarettes a day. The U.S. Surgeon General warns that lacking social connection can raise the risk of early death as much as smoking that many.<a class="fn" href="#src-3" aria-label="Source 3">3</a></p>
+        </li>
+        <li class="fact">
+          <p class="fact__n">1 in 4</p>
+          <p class="fact__t">Cameron County residents 65 and older have serious difficulty walking or climbing stairs (26.5%).<a class="fn" href="#src-4" aria-label="Source 4">4</a></p>
+        </li>
+        <li class="fact">
+          <p class="fact__n">11,030</p>
+          <p class="fact__t">Cameron County residents 65 and older have difficulty running errands alone, like getting to the doctor or the store.<a class="fn" href="#src-5" aria-label="Source 5">5</a></p>
+        </li>
+      </ol>
+      <p class="growing" data-sc-in><b>And the need is growing.</b> The number of Valley residents 65 and older is projected to rise from 175,849 in 2020 to 271,976 by 2040.<a class="fn" href="#src-6" aria-label="Source 6">6</a></p>
+
+      <div class="spread need__story">
         <div class="prose" data-sc-in>
-          <p class="dropcap">Many seniors in Cameron County live in homes that have slowly fallen into disrepair: a porch that gives, a yard that got away, a railing that was never put in. Bending down got hard, and then the help stopped coming.</p>
+          <p class="dropcap">Behind those numbers are homes that have slowly fallen into disrepair: a porch that gives, a yard that got away, a railing that was never put in. Bending down got hard, and then the help stopped coming.</p>
           <p>Loneliness is the harder part. In adult day cares, nursing homes and hospice centers across the Valley, there are people who go weeks without a visitor who came only for them.</p>
-          <p>We are a faith-based nonprofit, and we answer both the same way: by showing up, as neighbors, and coming back.</p>
+          <p>We answer both the same way: by showing up, as neighbors, and coming back.</p>
           <blockquote class="pull">“True change begins when faith turns into action.”</blockquote>
         </div>
         <figure class="plate plate--tall" data-sc-in>
@@ -308,35 +357,49 @@
           <figcaption class="caption"><b>A Valentine's visit.</b> Volunteers bringing flowers to a neighbor at his front door.</figcaption>
         </figure>
       </div>
+
+      <footer class="sources">
+        <p class="label">Sources</p>
+        <ol>
+          <li id="src-1">U.S. Census Bureau, American Community Survey 2020-2024 5-Year Estimates, <a href="https://data.census.gov/table/ACSST5Y2024.S1701?g=050XX00US48061">Table S1701</a>, people 65 and over.</li>
+          <li id="src-2">U.S. Census Bureau, American Community Survey 2020-2024 5-Year Estimates, <a href="https://data.census.gov/table/ACSDT5Y2024.B11007?g=050XX00US48061">Table B11007</a>, one-person households 65 and over.</li>
+          <li id="src-3">Office of the U.S. Surgeon General, <a href="https://www.hhs.gov/sites/default/files/surgeon-general-social-connection-advisory.pdf"><i>Our Epidemic of Loneliness and Isolation</i></a> (2023), p. 8. A national finding.</li>
+          <li id="src-4">U.S. Census Bureau, American Community Survey 2020-2024 5-Year Estimates, <a href="https://data.census.gov/table/ACSST5Y2024.S1810?g=050XX00US48061">Table S1810</a>, ambulatory difficulty, 65 and over.</li>
+          <li id="src-5">U.S. Census Bureau, American Community Survey 2020-2024 5-Year Estimates, <a href="https://data.census.gov/table/ACSST5Y2024.S1810?g=050XX00US48061">Table S1810</a>, independent living difficulty, 65 and over.</li>
+          <li id="src-6">Texas Demographic Center, <a href="https://demographics.texas.gov/Projections/">Vintage 2024 Population Projections</a>, mid scenario, Cameron, Hidalgo, Starr and Willacy counties combined, ages 65 and over.</li>
+        </ol>
+        <p class="sources__note">Census figures are survey estimates with margins of error, and they leave out people living in nursing homes.</p>
+      </footer>
     </div>
   </section>
 
   <!-- Authored silence before the peak: a full-stop intertitle, nothing else. -->
-  <section class="intertitle ground-night" data-sc-act="flow" data-nav="film" data-chapter-title="FILM_TITLE" data-ground="night">
+  <section class="intertitle ground-night" data-sc-act="flow" data-nav="film" data-chapter-title="Someone at the door" data-ground="night">
     <div class="col intertitle__inner">
       <div data-sc-reveal="up" data-sc-reveal-at="0.22 0.52">
-        <h2 class="display">FILM_TITLE</h2>
+        <h2 class="display">Someone at the door</h2>
       </div>
     </div>
   </section>
 
   <!-- II. THE PEAK. The film sits in its own frame with a caption column;
        it never runs under type. Largest span on the page. -->
-  <section id="film" class="ground-night" data-sc-act="scrub" data-sc-span="3.2" data-sc-dwell="0.3" data-chapter-title="FILM_TITLE" data-ground="night" aria-label="FILM_TITLE">
+  <section id="film" class="ground-night" data-sc-act="scrub" data-sc-span="3.2" data-sc-dwell="0.3" data-chapter-title="Someone at the door" data-ground="night" aria-label="Someone at the door">
     <div data-sc-stage>
       <div class="col film">
         <figure class="film__plate">
           <div class="film__frame">
             <img class="sc-stage__poster" src="assets/story-first.webp" alt="" width="1280" height="720">
-            <video data-sc-scrub data-sc-src="assets/story.mp4" data-sc-src-mobile="assets/story-m.mp4" muted playsinline preload="none" aria-label="Volunteers clear a senior's yard in Harlingen; she comes to her door, then sits on her porch while they work"></video>
+            <video data-sc-scrub data-sc-src="assets/story.mp4" data-sc-src-mobile="assets/story-m.mp4" muted playsinline preload="none" aria-label="Volunteers clear a senior's yard; she comes to her door, a volunteer greets her and brings her water, and she sits on her porch while they work"></video>
             <img class="film__still" src="assets/story-porch.webp" alt="A senior woman sits on her porch while volunteers in maroon shirts work in her yard at sunset" width="1280" height="720" loading="lazy">
           </div>
-          <figcaption class="caption"><b>Restore, Renew &amp; Rebuild, Phase 1.</b> A yard cleanup in Harlingen, filmed by Love Thy Neighbor.</figcaption>
+          <figcaption class="caption"><b>Love Thy Neighbor volunteers</b> with a neighbor at home. Rio Grande Valley, Texas.</figcaption>
         </figure>
         <div class="film__notes">
-          <p class="film__note" data-sc-cue="0 0.34 0 0.18">The Restore crew starts with the yard: the brush, the leaves, the things that pile up once bending down gets hard.</p>
-          <p class="film__note" data-sc-cue="0.3 0.6 0.2 0.18">Then someone knocks on the screen door, and the work slows down for a minute.</p>
-          <p class="film__peak display" data-sc-cue="0.56 1 0.16 0.1">The repairs are why we come. <em>The porch is why we stay.</em></p>
+          <p class="film__note" data-sc-cue="0 0.34 0 0.18">We start with whatever has gotten hard to do alone. Today it is leaves and brush. Other days it is a railing, a song or a letter.</p>
+          <p class="film__note" data-sc-cue="0.3 0.6 0.2 0.18">She comes to the screen door, and someone goes to meet her: a hand on her shoulder, a hello that takes its time.</p>
+          <p class="film__note" data-sc-cue="0.56 0.8 0.2 0.2">He kneels by her chair with some water. The crew works on, and she gets an afternoon with people who came for her.</p>
+          <p class="film__peak display" data-sc-cue="0.78 1 0.18 0.1">Everyone deserves a neighbor <em>who comes back.</em></p>
         </div>
       </div>
     </div>
@@ -346,14 +409,15 @@
   <section id="work" class="chapter ground-paper-2" data-chapter-title="The work" data-ground="paper-2">
     <div class="col">
       <header class="chapter__head" data-sc-in>
-        <h2 class="display">Three ways we show up: body, heart and spirit.</h2>
+        <h2 class="display">Body, heart and spirit.</h2>
+        <p class="need__lede">Today we serve Harlingen and Cameron County. As more neighbors join us, we plan to grow across the Rio Grande Valley.</p>
       </header>
       <ol class="index" data-sc-in data-sc-stagger="70">
         <li class="entry">
           <div><p class="label entry__kind">Home</p><h3 class="display">Restore, Renew &amp; Rebuild</h3></div>
           <div>
             <p>Junk removal, yard cleanups, painting, porch repair and accessibility fixes like ramps and railings, so seniors can live safely and with dignity.</p>
-            <p><span class="fact">Now in Phase 1 (Restore) in Harlingen, TX.</span> <a class="act-link" href="../../../programs.html#restore">About the program</a></p>
+            <p><span class="entry__fact">Now in Phase 1 (Restore) in Harlingen, TX.</span> <a class="act-link" href="../../../programs.html#restore">About the program</a></p>
           </div>
           <figure class="entry__img"><img src="assets/hero-poster.webp" width="1280" height="720" alt="Two volunteers in maroon shirts pull weeds beside a palm tree in front of a small house" loading="lazy"></figure>
         </li>
@@ -361,7 +425,7 @@
           <div><p class="label entry__kind">Fellowship</p><h3 class="display">Hearts &amp; Hands Fellowship</h3></div>
           <div>
             <p>Crafts, music, prayer and conversation, brought every month to adult day cares, nursing homes and hospice centers.</p>
-            <p><span class="fact">Monthly visits across the Valley.</span> <a class="act-link" href="../../../programs.html#hearts">About the program</a></p>
+            <p><span class="entry__fact">Monthly visits across the Valley.</span> <a class="act-link" href="../../../programs.html#hearts">About the program</a></p>
           </div>
           <figure class="entry__img"><img src="assets/seniors-crafts.webp" width="1600" height="1067" alt="Seniors around a round table making valentines at a fellowship event" loading="lazy"></figure>
         </li>
@@ -369,7 +433,7 @@
           <div><p class="label entry__kind">Friendship</p><h3 class="display">Adopt-A-Neighbor</h3></div>
           <div>
             <p>Each volunteer is matched with one senior for letters, calls, coffee and care packages, with LTN walking alongside in guidance and prayer.</p>
-            <p><span class="fact">One volunteer, one senior, monthly contact.</span> <a class="act-link" href="../../../programs.html#adopt">About the program</a></p>
+            <p><span class="entry__fact">One volunteer, one senior, monthly contact.</span> <a class="act-link" href="../../../programs.html#adopt">About the program</a></p>
           </div>
           <figure class="entry__img"><img src="assets/senior-valentine.webp" width="800" height="1200" alt="A smiling senior man holds up a handmade valentine" loading="lazy" style="object-position:50% 40%"></figure>
         </li>
