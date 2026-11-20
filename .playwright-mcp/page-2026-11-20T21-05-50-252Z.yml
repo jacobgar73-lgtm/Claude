@@ -1,0 +1,995 @@
+- generic [ref=f9e1]:
+  - generic [ref=f9e2]:
+    - banner [ref=f9e3]:
+      - generic [ref=f9e4]:
+        - link [ref=f9e5] [cursor=pointer]:
+          - /url: /
+          - img "National Academies" [ref=f9e6]
+        - list [ref=f9e8]:
+          - listitem
+          - listitem [ref=f9e9]:
+            - button "Open menu" [ref=f9e10] [cursor=pointer]
+    - generic [ref=f9e14]:
+      - generic [ref=f9e15]:
+        - heading [level=1] [ref=f9e16]:
+          - 'link "Social Isolation and Loneliness in Older Adults: Opportunities for the Health Care System" [ref=f9e17] [cursor=pointer]':
+            - /url: https://www.nationalacademies.org/read/25663/chapter/1
+          - text: (2020)
+        - 'heading "Chapter: 1 Introduction" [level=2] [ref=f9e18]'
+      - list [ref=f9e19]:
+        - listitem [ref=f9e20]:
+          - button "Get this book" [ref=f9e21] [cursor=pointer]
+    - generic [ref=f9e25]:
+      - link [ref=f9e26] [cursor=pointer]:
+        - /url: https://www.nationalacademies.org/read/25663/chapter/2
+        - generic [ref=f9e27]:
+          - generic [aria-hidden] [ref=f9e28]: <<
+          - text: "Previous Chapter: Summary"
+      - generic [ref=f9e29]:
+        - generic [ref=f9e30]:
+          - generic [ref=f9e33]:
+            - generic [ref=f9e34]:
+              - generic [ref=f9e35]: Page 17
+              - generic [ref=f9e36]:
+                - generic:
+                  - link "Share this page" [ref=f9e37] [cursor=pointer]:
+                    - /url: "#"
+                  - link "Cite this page" [ref=f9e40] [cursor=pointer]:
+                    - /url: "#"
+            - generic [ref=f9e44]:
+              - strong [ref=f9e45]: "Suggested Citation:"
+              - text: "\"1 Introduction.\" National Academies of Sciences, Engineering, and Medicine. 2020."
+              - emphasis [ref=f9e46]: "Social Isolation and Loneliness in Older Adults: Opportunities for the Health Care System"
+              - text: ". Washington, DC: The National Academies Press. doi: 10.17226/25663."
+              - generic [ref=f9e47] [cursor=pointer]
+          - generic [ref=f9e50]:
+            - heading [level=1] [ref=f9e51]:
+              - generic "17" [ref=f9e52]:
+                - link "1 Introduction" [ref=f9e53] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/1#content-toc_pz15-3
+            - generic [ref=f9e54]:
+              - paragraph [ref=f9e55]: A social instinct is implanted in all [people] by nature. . . .
+              - paragraph [ref=f9e56]:
+                - text: —Aristotle, Politics, 350 B.C.E.,
+                - link "Jowett (2009)" [ref=f9e57] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref512
+              - paragraph [ref=f9e58]: The scientific evidence is convincing. Strong social ties are good for one’s health.
+              - paragraph [ref=f9e59]:
+                - text: —
+                - link "Lubben (2017)" [ref=f9e60] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref581
+            - paragraph [ref=f9e61]:
+              - text: Social isolation (the objective state of having few social relationships or infrequent social contact with others) and loneliness (a subjective feeling of being isolated) are serious yet underappreciated public health risks that affect a significant portion of the population. Approximately one-quarter (24 percent) of community-dwelling Americans aged 65 and older are considered to be socially isolated, and a significant proportion of adults in the United States report feeling lonely (35 percent of adults aged 45 and older and 43 percent of adults aged 60 and older) (
+              - link "Anderson and Thayer, 2018" [ref=f9e62] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref30
+              - text: ;
+              - link "Cudjoe et al., 2020" [ref=f9e63] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref224
+              - text: ;
+              - link "Perissinotto et al., 2012" [ref=f9e64] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref706
+              - text: "). In spite of some challenges related to the measurement of social isolation and loneliness, current evidence suggests that many older adults are socially isolated or lonely (or both) in ways that put their health at risk. For example:"
+            - list [ref=f9e65]:
+              - listitem [ref=f9e66]:
+                - text: Social isolation significantly increases a person’s risk of mortality from all causes, a risk that may rival the risks of smoking, obesity, and physical activity (
+                - link "Holt-Lunstad et al., 2017" [ref=f9e67] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref445
+                - text: );
+              - listitem [ref=f9e68]:
+                - text: Being socially connected in a variety of ways is associated with having a 50 percent greater likelihood of survival, with some indicators of social integration being associated with a 91 percent greater likelihood of survival (
+                - link "Holt-Lunstad et al., 2010" [ref=f9e69] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref443
+                - text: );
+        - generic [ref=f9e70]:
+          - generic [ref=f9e73]:
+            - generic [ref=f9e74]:
+              - generic [ref=f9e75]: Page 18
+              - generic [ref=f9e76]:
+                - generic:
+                  - link "Share this page" [ref=f9e77] [cursor=pointer]:
+                    - /url: "#"
+                  - link "Cite this page" [ref=f9e80] [cursor=pointer]:
+                    - /url: "#"
+            - generic [ref=f9e84]:
+              - strong [ref=f9e85]: "Suggested Citation:"
+              - text: "\"1 Introduction.\" National Academies of Sciences, Engineering, and Medicine. 2020."
+              - emphasis [ref=f9e86]: "Social Isolation and Loneliness in Older Adults: Opportunities for the Health Care System"
+              - text: ". Washington, DC: The National Academies Press. doi: 10.17226/25663."
+              - generic [ref=f9e87] [cursor=pointer]
+          - generic [ref=f9e90]:
+            - list [ref=f9e91]:
+              - listitem [ref=f9e92]:
+                - generic "18" [ref=f9e93]:
+                  - text: Social isolation has been associated with a 29 percent increased all-cause risk for mortality and a 25 percent increased risk for cancer mortality (
+                  - link "Fleisch Marcus et al., 2017" [ref=f9e94] [cursor=pointer]:
+                    - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref300
+                  - text: ;
+                  - link "Holt-Lunstad et al., 2015" [ref=f9e95] [cursor=pointer]:
+                    - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref444
+                  - text: );
+              - listitem [ref=f9e96]:
+                - text: Loneliness has been associated with higher rates of clinically significant depression, anxiety, and suicidal ideation (
+                - link "Beutel et al., 2017" [ref=f9e97] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref80
+                - text: );
+              - listitem [ref=f9e98]:
+                - text: Loneliness has been associated with a 59 percent increased risk of functional decline and 45 percent increased risk of death (
+                - link "Perissinotto et al., 2012" [ref=f9e99] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref706
+                - text: );
+              - listitem [ref=f9e100]:
+                - text: Poor social relationships (characterized by social isolation or loneliness) have been associated with a 29 percent increased risk of incident coronary heart disease and a 32 percent increased risk of stroke (
+                - link "Valtorta et al., 2016a" [ref=f9e101] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref925
+                - text: );
+              - listitem [ref=f9e102]:
+                - text: Loneliness among heart failure patients has been associated with a nearly four times increased risk of death, 68 percent increased risk of hospitalization, and 57 percent increased risk of emergency department visits (
+                - link "Manemann et al., 2018" [ref=f9e103] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref598
+                - text: ); and
+              - listitem [ref=f9e104]:
+                - text: Social isolation has been associated with an approximately 50 percent increased risk of developing dementia (
+                - link "Kuiper et al., 2015" [ref=f9e105] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref547
+                - text: ;
+                - link "Penninkilampi et al., 2018" [ref=f9e106] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref704
+                - text: ).
+            - paragraph [ref=f9e107]: Understanding the full scope and complexity of the influence of social relationships on health is challenging. In addition to the absolute number or extent of social relationships, the quality of such relationships is also important for their impact on health. As such, two aspects of social relationships, social isolation and loneliness, have become most prominent in the scientific literature. While both social isolation and loneliness can affect health throughout the life course, this report focuses specifically on the health and medical impacts of social isolation and loneliness among adults aged 50 and older. Of note, it is incorrect to assume that all older people are isolated or lonely. Rather, older adults are at increased risk for social isolation and loneliness because they are more likely to face predisposing factors such as living alone, the loss of family or friends, chronic illness, and sensory impairments. Over a life course, social isolation and loneliness may be episodic or chronic, depending on an individual’s circumstances and perceptions.
+            - paragraph [ref=f9e108]: Many approaches have been taken to improve social connections for individuals who are socially isolated or lonely, but finding opportunities to intervene may be most challenging for those who are at highest risk. For example, people who do not have consistent interactions with others (e.g., have unstable housing, do not belong to any social or religious groups, or do not have significant personal relationships) may never be identified in their own communities. However, nearly all persons who are 50 years of age or older interact with the health care system in some way, regardless of where they fall on the social isolation or loneliness continuum, and so this interaction may serve as a touchpoint to identify those who are isolated or lonely. Therefore, this report focuses on the role of the health care system as a key and relatively untapped partner in efforts to identify, prevent, and mitigate the adverse health impacts of social isolation and loneliness in older adults.
+            - heading [level=2]
+        - generic [ref=f9e109]:
+          - generic [ref=f9e112]:
+            - generic [ref=f9e113]:
+              - generic [ref=f9e114]: Page 19
+              - generic [ref=f9e115]:
+                - generic:
+                  - link "Share this page" [ref=f9e116] [cursor=pointer]:
+                    - /url: "#"
+                  - link "Cite this page" [ref=f9e119] [cursor=pointer]:
+                    - /url: "#"
+            - generic [ref=f9e123]:
+              - strong [ref=f9e124]: "Suggested Citation:"
+              - text: "\"1 Introduction.\" National Academies of Sciences, Engineering, and Medicine. 2020."
+              - emphasis [ref=f9e125]: "Social Isolation and Loneliness in Older Adults: Opportunities for the Health Care System"
+              - text: ". Washington, DC: The National Academies Press. doi: 10.17226/25663."
+              - generic [ref=f9e126] [cursor=pointer]
+          - generic [ref=f9e129]:
+            - heading [level=2] [ref=f9e130]:
+              - generic "19" [ref=f9e131]:
+                - link "STUDY CONTEXT" [ref=f9e132] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/1#content-toc_pz15-4
+            - paragraph [ref=f9e133]:
+              - text: A systematic and rigorous science of social relationships and their consequences, especially in terms of health, emerged in the latter part of the 20th century as part of a broader recognition of the role of social determinants of health. By the beginning of the 21st century, several aspects of social relationships were being studied systematically in research and identified as potential influences on human health. Only recently have the adverse health effects of social isolation and loneliness received public attention nationally and internationally through governmental initiatives, the work of nonprofit organizations, and mass media coverage (
+              - link "Anderson and Thayer, 2018" [ref=f9e134] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref30
+              - text: ;
+              - link "Brody, 2017" [ref=f9e135] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref112
+              - text: ;
+              - link "DiJulio et al., 2018" [ref=f9e136] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref253
+              - text: ;
+              - link "Frank, 2018" [ref=f9e137] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref310
+              - text: ;
+              - link "Hafner, 2016" [ref=f9e138] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref381
+              - text: ;
+              - link "Khullar, 2016" [ref=f9e139] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref525
+              - text: ). For example, in January 2018, Theresa May, prime minister of the United Kingdom, established and appointed a Minister of Loneliness to develop policies for both measuring and reducing loneliness (
+              - link "Yeginsu, 2018" [ref=f9e140] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref989
+              - text: ).
+            - paragraph [ref=f9e141]: In his keynote address for the Accreditation Council for Graduate Medical Education (ACGME) 2019 Annual Educational Conference, Vivek Murthy, the 19th Surgeon General of the United States, spoke of an “epidemic of loneliness” that he recognized during his tenure as Surgeon General, stating,
+            - paragraph [ref=f9e143]:
+              - text: I see [loneliness] actually as a primary concern, not just a health concern but as a concern as a society. . . . While the negative impact of loneliness cannot be denied, the treatment can be relatively simple. Part of treating loneliness is creating moments for genuine human interaction, which can be achieved on several levels. (
+              - link "ACGME, 2019" [ref=f9e144] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref11
+              - text: )
+            - heading "Prevalence of Social Isolation and Loneliness" [level=3] [ref=f9e145]
+            - paragraph [ref=f9e146]: "Understanding the prevalence of social isolation and loneliness is important in two ways. First, the population health impact of any risk factor is a function of the strength of its impact and its prevalence in a population. Second, whether a risk factor is becoming more or less prevalent is an indicator of whether its importance for population health is waxing or waning. However, it is very difficult to measure social isolation or loneliness in any population or to ascertain the degree of increase or decrease. A range of estimates have been made for the prevalence of social isolation and loneliness among different segments of the adult population in the United States. For example:"
+            - list [ref=f9e147]:
+              - listitem [ref=f9e148]:
+                - text: Data from the National Health and Aging Trends Study found that 24 percent of community-dwelling adults aged 65 and older in the United States were categorized as being socially isolated and 4 percent were severely socially isolated (
+                - link "Cudjoe et al., 2020" [ref=f9e149] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref224
+                - text: );
+              - listitem [ref=f9e150]:
+                - text: A 2012 study by Perissinotto and colleagues found that 43 percent of adults aged 60 and older reported feeling lonely. Furthermore, among those who reported at least one symptom of loneliness, 13 percent reported the symptom as occurring “often” (
+                - link "Perissinotto et al., 2012" [ref=f9e151] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref706
+                - text: );
+        - generic [ref=f9e152]:
+          - generic [ref=f9e155]:
+            - generic [ref=f9e156]:
+              - generic [ref=f9e157]: Page 20
+              - generic [ref=f9e158]:
+                - generic:
+                  - link "Share this page" [ref=f9e159] [cursor=pointer]:
+                    - /url: "#"
+                  - link "Cite this page" [ref=f9e162] [cursor=pointer]:
+                    - /url: "#"
+            - generic [ref=f9e166]:
+              - strong [ref=f9e167]: "Suggested Citation:"
+              - text: "\"1 Introduction.\" National Academies of Sciences, Engineering, and Medicine. 2020."
+              - emphasis [ref=f9e168]: "Social Isolation and Loneliness in Older Adults: Opportunities for the Health Care System"
+              - text: ". Washington, DC: The National Academies Press. doi: 10.17226/25663."
+              - generic [ref=f9e169] [cursor=pointer]
+          - generic [ref=f9e172]:
+            - list [ref=f9e173]:
+              - listitem [ref=f9e174]:
+                - generic "20" [ref=f9e175]:
+                  - text: A survey by the AARP Foundation found that more than one-third (35 percent) of adults aged 45 and older in the United States report feeling lonely (
+                  - link "Anderson and Thayer, 2018" [ref=f9e176] [cursor=pointer]:
+                    - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref30
+                  - text: );
+              - listitem [ref=f9e177]:
+                - text: A 2018 survey by the Kaiser Family Foundation found that “more than a fifth of adults [aged 18 and older] in the United States (22 percent) . . . say they often or always feel lonely, feel that they lack companionship, feel left out, or feel isolated from others” (
+                - link "DiJulio et al., 2018" [ref=f9e178] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref253
+                - text: );
+              - listitem [ref=f9e179]:
+                - text: A study by
+                - link "Hawkley and colleagues (2017)" [ref=f9e180] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref405
+                - text: using data from the National Social Life, Health, and Aging Project found that 19 percent of adults aged 62–91 report frequent loneliness (with an additional 29 percent reporting occasional loneliness); and
+              - listitem [ref=f9e181]:
+                - text: A study by Cigna of adults aged 18 and older found that 46 percent reported “sometimes or always feeling alone” (
+                - link "Cigna/Ipsos, 2018" [ref=f9e182] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref182
+                - text: ).
+            - paragraph [ref=f9e183]:
+              - text: Depending on how social isolation or loneliness is measured, the demographic trends contributing to it may include an increase in the number of people living alone, decreased marriage rates, higher rates of childlessness, or decreased community involvement (e.g., volunteerism, religious affiliation) (
+              - link "Holt-Lunstad, 2018b" [ref=f9e184] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref440
+              - text: ;
+              - link "Putnam, 2001" [ref=f9e185] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref738
+              - text: ). Social isolation and loneliness may occur unequally across age groups, including within the group of adults 50 years of age and older who are the focus of this report. Furthermore, the oldest adults may not be the most isolated or lonely. For example, the 2018 survey by the Kaiser Family Foundation found that 59 percent of the respondents who reported feeling lonely were under age 50 (
+              - link "DiJulio et al., 2018" [ref=f9e186] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref253
+              - text: ); the Cigna study found that adults aged 18–22 were the loneliest, and that loneliness decreased with age (
+              - link "Cigna/Ipsos, 2018" [ref=f9e187] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref182
+              - text: ); and a study by
+              - link "Hawkley and colleagues (2019)" [ref=f9e188] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref406
+              - text: found that “loneliness decreased with age through the early 70s, after which it increased” (p. 1144).
+            - paragraph [ref=f9e189]:
+              - text: Aside from looking for differences among various age segments of the adult population, several studies have examined whether there are variations in the prevalence of social isolation or loneliness among subsets of adults related to demographic factors such as socioeconomic status, race and ethnicity, gender, educational status, employment status, and marital status. Several studies have found that those who report feeling lonely are more likely than others to report lower incomes and assets, having poorer health, and not being married (
+              - link "Anderson and Thayer, 2018" [ref=f9e190] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref30
+              - text: ;
+              - link "DiJulio et al., 2018" [ref=f9e191] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref253
+              - text: ;
+              - link "Hawkley et al., 2017" [ref=f9e192] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref405
+              - text: ). According to the study from
+              - link "Hawkley and colleagues (2017)" [ref=f9e193] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref405
+              - text: ", “loneliness is not significantly more prevalent in the oldest old adults, nor in minority groups relative to whites, nor in women relative to men” (p. 6) and"
+              - link "Anderson and Thayer (2018)" [ref=f9e194] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref30
+              - text: found that individuals who identify as lesbian, gay, bisexual, transgender, and questioning (or queer) (LGBTQ) are more likely to say they are lonely.
+              - link "Cudjoe and colleagues (2020)" [ref=f9e195] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref224
+              - text: found that “being unmarried, male, having low education, and low income were all independently associated with social isolation” (p. 107). They further found that “Black and Hispanic older adults had lower odds of social isolation compared with white older adults” (p. 107).
+        - generic [ref=f9e196]:
+          - generic [ref=f9e199]:
+            - generic [ref=f9e200]:
+              - generic [ref=f9e201]: Page 21
+              - generic [ref=f9e202]:
+                - generic:
+                  - link "Share this page" [ref=f9e203] [cursor=pointer]:
+                    - /url: "#"
+                  - link "Cite this page" [ref=f9e206] [cursor=pointer]:
+                    - /url: "#"
+            - generic [ref=f9e210]:
+              - strong [ref=f9e211]: "Suggested Citation:"
+              - text: "\"1 Introduction.\" National Academies of Sciences, Engineering, and Medicine. 2020."
+              - emphasis [ref=f9e212]: "Social Isolation and Loneliness in Older Adults: Opportunities for the Health Care System"
+              - text: ". Washington, DC: The National Academies Press. doi: 10.17226/25663."
+              - generic [ref=f9e213] [cursor=pointer]
+          - generic [ref=f9e216]:
+            - paragraph [ref=f9e217]: Differences in findings among many studies on the prevalence of social isolation and loneliness may be due, in part, to the challenges of defining and measuring social isolation and loneliness, including the use of different measures to assess different aspects of social isolation and loneliness in various groups that may differ by various demographic factors. Despite the variance in measurement, there are clearly a vast number of people who are socially isolated or lonely. Furthermore, the implications of these findings for physical or mental health, morbidity, and mortality underscore the urgency surrounding these issues and render them topics of highest concern to both public health and clinical health care.
+            - heading [level=2] [ref=f9e218]:
+              - link "CHARGE TO THE COMMITTEE" [ref=f9e219] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/1#content-toc_pz15-5
+            - paragraph [ref=f9e220]:
+              - text: With support from the AARP Foundation, the National Academies of Sciences, Engineering, and Medicine (the National Academies) formed the Committee on the Health and Medical Dimensions of Social Isolation and Loneliness in Older Adults in fall 2018. The committee’s charge essentially consisted of two parts. First, the committee was asked to examine how social isolation and loneliness affect health and quality of life in adults aged 50 and older, particularly among low-income, underserved, and vulnerable subpopulations. Second, the committee was charged to identify and recommend opportunities specifically for clinical settings of health care to help reduce the incidence and adverse health impacts of social isolation and loneliness (such as clinical tools and methodologies, professional education, and public awareness) and to examine avenues for translation and dissemination of information targeted to health care practitioners (see
+              - link "Box 1-1" [ref=f9e221] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/3#chapter01_pADo
+              - text: ).
+            - paragraph [ref=f9e222]:
+              - text: The committee was asked to focus on adults aged 50 and older. Social connections are considered to be a fundamental human need and thus are vital across the lifespan. The committee acknowledges the importance of social connection at all ages and recognizes that social processes at earlier ages influence the trajectory of risk as one ages. For example, there is evidence that social disruptions (e.g., adverse childhood experiences) at early ages can place individuals on a worse health trajectory (
+              - link "Anda et al., 2006" [ref=f9e223] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref26
+              - text: ;
+              - link "Uchino, 2009a" [ref=f9e224] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref910
+              - text: ). However, for the purposes of this study and the specific task, the committee did not examine the evidence base related to the health impacts on younger generations or interventions aimed at those populations. Furthermore, the committee notes that studies of both the health impacts of social isolation or loneliness and of potential interventions also often include different segments of the population over age 50, which can make comparisons across studies challenging.
+            - paragraph [ref=f9e225]: While this report focuses on the specific role of the health care system (and the role of clinicians and clinical care in particular), the committee emphasizes that the health care system alone cannot solve all of the challenges related to social isolation and loneliness; rather, the health care system needs to connect with the
+        - generic [ref=f9e226]:
+          - generic [ref=f9e229]:
+            - generic [ref=f9e230]:
+              - generic [ref=f9e231]: Page 22
+              - generic [ref=f9e232]:
+                - generic:
+                  - link "Share this page" [ref=f9e233] [cursor=pointer]:
+                    - /url: "#"
+                  - link "Cite this page" [ref=f9e236] [cursor=pointer]:
+                    - /url: "#"
+            - generic [ref=f9e240]:
+              - strong [ref=f9e241]: "Suggested Citation:"
+              - text: "\"1 Introduction.\" National Academies of Sciences, Engineering, and Medicine. 2020."
+              - emphasis [ref=f9e242]: "Social Isolation and Loneliness in Older Adults: Opportunities for the Health Care System"
+              - text: ". Washington, DC: The National Academies Press. doi: 10.17226/25663."
+              - generic [ref=f9e243] [cursor=pointer]
+          - generic [ref=f9e246]:
+            - complementary [ref=f9e247]:
+              - heading "BOX 1-1 Statement of Task" [level=5] [ref=f9e248]
+              - paragraph [ref=f9e250]: "An ad hoc committee under the auspices of the National Academies of Sciences, Engineering, and Medicine will examine how isolation and loneliness impact health outcomes in older adults aged 50 and older, particularly among low-income, underserved, and vulnerable subpopulations. The committee will:"
+              - list [ref=f9e251]:
+                - listitem [ref=f9e252]:
+                  - text: "Summarize and examine the evidence that social isolation and loneliness predict poor health outcomes and increase a person’s risk for premature morbidity, including evidence for:"
+                  - list [ref=f9e253]:
+                    - listitem [ref=f9e254]: Predictors of social isolation and loneliness;
+                    - listitem [ref=f9e255]: Impact of social isolation and loneliness on the cognitive, emotional, medical, and quality-of-life outcomes; and
+                    - listitem [ref=f9e256]: Factors that moderate and mediate the links between social isolation/loneliness and health outcomes.
+                - listitem [ref=f9e257]: Explore how social isolation and loneliness affect health care access and utilization.
+                - listitem [ref=f9e258]:
+                  - text: "Make evidence-based recommendations on translating research into practice within the clinical setting that could facilitate progress in reducing the incidence and adverse health impacts of social isolation and loneliness among the low-income 50+ population. These recommendations will focus on the following issues:"
+                  - list [ref=f9e259]:
+                    - listitem [ref=f9e260]:
+                      - text: Opportunities for the identification of, prevention of, and interventions for social isolation and loneliness that can be incorporated into clinical environments
+                      - generic [ref=f9e261]: that may include
+                      - text: social and environmental programs; the education of health care professionals; tools and methodologies that can be used in clinical settings; and public awareness.
+                    - listitem [ref=f9e262]: Current financing for social isolation and loneliness interventions and future opportunities.
+                - listitem [ref=f9e263]: Examine avenues for translation and dissemination of new findings and communication of new information targeting health care practitioners.
+            - paragraph [ref=f9e264]: broader public health and social care communities. Furthermore, the committee recognizes that in the larger context of addressing social isolation and loneliness, the most effective interventions may not require the participation of the health care system. However, the committee argues that this does not mean that the health care system should not strive to help improve the health and well-being of those who suffer the adverse health impacts of social isolation and loneliness. In fact, health care providers may be in the best position to identify individuals who are at highest risk for social isolation or loneliness—individuals for whom the health care system may be their only point of contact with their broader community. In this way, the health care system can help those individuals to connect
+        - generic [ref=f9e265]:
+          - generic [ref=f9e268]:
+            - generic [ref=f9e269]:
+              - generic [ref=f9e270]: Page 23
+              - generic [ref=f9e271]:
+                - generic:
+                  - link "Share this page" [ref=f9e272] [cursor=pointer]:
+                    - /url: "#"
+                  - link "Cite this page" [ref=f9e275] [cursor=pointer]:
+                    - /url: "#"
+            - generic [ref=f9e279]:
+              - strong [ref=f9e280]: "Suggested Citation:"
+              - text: "\"1 Introduction.\" National Academies of Sciences, Engineering, and Medicine. 2020."
+              - emphasis [ref=f9e281]: "Social Isolation and Loneliness in Older Adults: Opportunities for the Health Care System"
+              - text: ". Washington, DC: The National Academies Press. doi: 10.17226/25663."
+              - generic [ref=f9e282] [cursor=pointer]
+          - generic [ref=f9e285]:
+            - paragraph [ref=f9e286]: "with the most appropriate care, either inside or outside the health care system. Therefore, the health care system has the potential to be a critical component of a much larger solution. As noted by Lisa Marsh Ryerson, president of the AARP Foundation, in an open session of the committee’s first meeting:"
+            - paragraph [ref=f9e288]: We have been working in the space of social isolation and loneliness among older adults since 2010 and we have been working on advancing a variety of solutions as well as funding and examining the research. But for us this study fills an important research and recommendation gap because from our point of view we will not make measurable significant steps toward solving [social isolation and loneliness] unless we figure out the path for health care.
+            - heading [level=2] [ref=f9e289]:
+              - link "RELEVANT NATIONAL ACADEMIES REPORTS" [ref=f9e290] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/1#content-toc_pz15-6
+            - paragraph [ref=f9e291]:
+              - text: The National Academies have produced many reports related to the social determinants of health, and several of them are directly relevant to this current study. The work, conclusions, and recommendations of the current committee reinforce, extend, and elaborate on the work, conclusions, and recommendations of prior National Academies committees.
+              - link "Box 1-2" [ref=f9e292] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/3#chapter01_pAvSW
+              - text: provides some examples of previous National Academies work related to the work of this committee.
+            - heading [level=2] [ref=f9e293]:
+              - link "STUDY APPROACH" [ref=f9e294] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/1#content-toc_pz15-7
+            - paragraph [ref=f9e295]:
+              - text: The Committee on the Health and Medical Dimensions of Social Isolation and Loneliness in Older Adults consisted of 15 members with expertise in bio-informatics, economics, epidemiology, geriatrics, health care, health care administration, medicine, nursing, psychiatry, psychology, public health, rural health, social work, and sociology. (See
+              - link "Appendix B" [ref=f9e296] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/15#291
+              - text: for the biographies of the committee members.)
+            - paragraph [ref=f9e297]:
+              - text: A variety of sources informed the committee’s work. The committee met in person five times, and during three of those meetings it held public sessions to obtain input from a broad range of relevant stakeholders, including the sponsor. (See
+              - link "Appendix A" [ref=f9e298] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/14#287
+              - text: for the public meeting agendas with topics and speakers listed.) In addition, the committee conducted extensive literature reviews, reached out to a variety of public and private stakeholders, and commissioned one paper.
+            - paragraph [ref=f9e299]: To address its charge, the committee set the following parameters
+            - list [ref=f9e300]:
+              - listitem [ref=f9e301]: Created a guiding framework that highlighted the role of the health care system
+              - listitem [ref=f9e302]: Addressed relevant definitions
+              - listitem [ref=f9e303]: Defined the scope of health care providers and settings
+              - listitem [ref=f9e304]: Identified the populations at risk and age groups to be studied
+              - listitem [ref=f9e305]: Considered the quality of the existing evidence base
+        - generic [ref=f9e306]:
+          - generic [ref=f9e309]:
+            - generic [ref=f9e310]:
+              - generic [ref=f9e311]: Page 24
+              - generic [ref=f9e312]:
+                - generic:
+                  - link "Share this page" [ref=f9e313] [cursor=pointer]:
+                    - /url: "#"
+                  - link "Cite this page" [ref=f9e316] [cursor=pointer]:
+                    - /url: "#"
+            - generic [ref=f9e320]:
+              - strong [ref=f9e321]: "Suggested Citation:"
+              - text: "\"1 Introduction.\" National Academies of Sciences, Engineering, and Medicine. 2020."
+              - emphasis [ref=f9e322]: "Social Isolation and Loneliness in Older Adults: Opportunities for the Health Care System"
+              - text: ". Washington, DC: The National Academies Press. doi: 10.17226/25663."
+              - generic [ref=f9e323] [cursor=pointer]
+          - generic [ref=f9e326]:
+            - complementary [ref=f9e327]:
+              - generic "24" [ref=f9e328]:
+                - heading "BOX 1-2 Previous Reports of the National Academies" [level=5] [ref=f9e329]
+                - paragraph [ref=f9e331]:
+                  - text: In The Second Fifty Years (
+                  - link "IOM, 1992" [ref=f9e332] [cursor=pointer]:
+                    - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref475
+                  - text: ), the committee noted “a lack of family and community supports plays an important role in the development and exacerbation of disease” (p. 8). The report further indicated that “clinicians, family, friends, and social institutions bear a responsibility for diminishing social isolation” (p. 8). The committee recommended the identification of at-risk individuals, noting “there are indications that the first opportunity for such an identification of needs is at the source of medical care” (p. 256).
+                - paragraph [ref=f9e333]:
+                  - text: "In Capturing Social and Behavioral Domains and Measures in Electronic Health Records: Phase 2 ("
+                  - link "IOM, 2014" [ref=f9e334] [cursor=pointer]:
+                    - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref482
+                  - text: "), the committee recommended social isolation as one of 10 domains best suited for inclusion in all electronic health records (EHRs). In assessing the usefulness of collecting data on social connections and social isolation, the committee noted:"
+                - paragraph [ref=f9e336]: If health care providers know the social integration/isolation, social support, and loneliness of individual patients, they may better understand not only the patient’s health but also his or her use of and need for health care services. . . . If the health system is aware that social integration/isolation, social support, and loneliness can be major risk and protective factors for health, it can use this information to identify patients and work to assess and intervene at a population or community level. . . . For researchers, the availability of more data on integration/isolation, social support, and loneliness can advance the knowledge of how much these determinants affect health and enable the establishment of better screening and treatment programs for loneliness and interventions within the health system. (pp. 97–98)
+                - paragraph [ref=f9e337]: That committee further concluded that the updated and adapted Berkman–Syme Social Network Index (as used for the National Health and Nutrition Examination Survey III) could be adopted into EHRs. They acknowledged that specific tools exist to assess “social isolation and disconnectedness” in geriatric populations, but decided that this measure was appropriate for use in all adults (p. 197).
+                - paragraph [ref=f9e338]:
+                  - text: In Cognitive Aging (
+                  - link "IOM, 2015" [ref=f9e339] [cursor=pointer]:
+                    - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref483
+                  - text: ), the committee described how social isolation and loneliness are associated with declines in global cognition, psychomotor
+            - heading "Guiding Framework" [level=3] [ref=f9e340]
+            - paragraph [ref=f9e341]: Pursuant to its charge, the committee focused heavily on the clinical health care setting. This focus also seemed appropriate as clinical care is itself an aspect of, or an intervention related to, social connection. Clinical settings offer major opportunities for identifying problems related to social isolation and loneliness and for advancing interventions to alleviate these problems either within the clinical care setting itself or by mobilizing broader social and policy resources that may be needed for effective intervention.
+            - paragraph [ref=f9e342]: To guide its deliberations, the committee developed a conceptual framework to better understand the relationships among several aspects of social connections
+        - generic [ref=f9e343]:
+          - generic [ref=f9e346]:
+            - generic [ref=f9e347]:
+              - generic [ref=f9e348]: Page 25
+              - generic [ref=f9e349]:
+                - generic:
+                  - link "Share this page" [ref=f9e350] [cursor=pointer]:
+                    - /url: "#"
+                  - link "Cite this page" [ref=f9e353] [cursor=pointer]:
+                    - /url: "#"
+            - generic [ref=f9e357]:
+              - strong [ref=f9e358]: "Suggested Citation:"
+              - text: "\"1 Introduction.\" National Academies of Sciences, Engineering, and Medicine. 2020."
+              - emphasis [ref=f9e359]: "Social Isolation and Loneliness in Older Adults: Opportunities for the Health Care System"
+              - text: ". Washington, DC: The National Academies Press. doi: 10.17226/25663."
+              - generic [ref=f9e360] [cursor=pointer]
+          - generic [ref=f9e363]:
+            - complementary [ref=f9e364]:
+              - paragraph [ref=f9e365]: processing speed, and delayed visual memory; Alzheimer’s disease; and other physical problems. In particular, the committee noted that “cognitive declines may lead to lower social engagement, creating a downward spiral of social isolation and loneliness” (p. 121). Overall, the committee concluded that “although evidence from some epidemiological and observational studies indicates that increases in social activity and social engagement may be associated with higher levels of cognition, evidence from RCTs [randomized controlled trials] is needed before recommendations can be made for specific social interaction interventions” (p. 123).
+              - paragraph [ref=f9e366]:
+                - text: In A Framework for Educating Health Professionals to Address the Social Determinants of Health (
+                - link "NASEM, 2016a" [ref=f9e367] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref653
+                - text: ), the committee developed a framework to “align the education, health, and other sectors, in partnership with communities, to educate health professionals in the social determinants of health” (p. 4). The committee recommended use of the framework to “guide and support evaluation research aimed at identifying and illustrating effective approaches for learning about the social determinants of health in and with communities while improving health outcomes, thereby building the evidence base” (p. 13).
+              - paragraph [ref=f9e368]:
+                - text: In Accounting for Social Risk Factors in Medicare Payment (
+                - link "NASEM, 2017" [ref=f9e369] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref656
+                - text: ), the committee identified social relationships as one of five domains of social risk factors “that are associated with health care outcomes independently of quality of care” (p. 2).
+              - paragraph [ref=f9e370]:
+                - text: In Integrating Social Care into the Delivery of Health Care (
+                - link "NASEM, 2019" [ref=f9e371] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref657
+                - text: ), the committee defined social risk factors as “social determinants that may be associated with negative health outcomes, such as poor housing or unstable social relationships” (p. 28). The committee recommended that “health care organizations should take steps to integrate social care into health care” and that effective strategies for screening and assessing social risk factors “should include standardized and validated questions, as available, and should use interoperable data systems to document results” (p. 10). Furthermore, the committee noted that clinical personnel who should address social needs includes nurses, physicians, community health workers, home health aides, and geriatricians, among others.
+            - paragraph [ref=f9e372]:
+              - generic "25" [ref=f9e373]:
+                - text: and how they are embedded in the overarching public health focus on social determinants of health (see
+                - link "Figure 1-1" [ref=f9e374] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/3#chapter01_pz44-2
+                - text: ). The framework in
+                - link "Figure 1-1" [ref=f9e375] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/3#chapter01_pz44-2
+                - text: has a presumed causal flow (indicated by the thicker unidirectional arrows) from risk factors (for social connections and other variables in the framework) through social connections (i.e., social isolation and loneliness and other aspects of social connection such as social support, considered both independently and in relation to each other) to mediators (e.g., medical, biological, behavioral, social, and psychological pathways) through which social isolation or loneliness affect health outcomes and, potentially, mortality.
+            - figure
+        - generic [ref=f9e376]:
+          - generic [ref=f9e379]:
+            - generic [ref=f9e380]:
+              - generic [ref=f9e381]: Page 26
+              - generic [ref=f9e382]:
+                - generic:
+                  - link "Share this page" [ref=f9e383] [cursor=pointer]:
+                    - /url: "#"
+                  - link "Cite this page" [ref=f9e386] [cursor=pointer]:
+                    - /url: "#"
+            - generic [ref=f9e390]:
+              - strong [ref=f9e391]: "Suggested Citation:"
+              - text: "\"1 Introduction.\" National Academies of Sciences, Engineering, and Medicine. 2020."
+              - emphasis [ref=f9e392]: "Social Isolation and Loneliness in Older Adults: Opportunities for the Health Care System"
+              - text: ". Washington, DC: The National Academies Press. doi: 10.17226/25663."
+              - generic [ref=f9e393] [cursor=pointer]
+          - generic [ref=f9e396]:
+            - figure [ref=f9e397]:
+              - generic "26" [ref=f9e398]:
+                - img "Image" [ref=f9e399]
+                - generic [ref=f9e400]: FIGURE 1-1 Guiding framework.
+            - paragraph [ref=f9e402]:
+              - text: In this report and more generally, variables or boxes that intervene between a presumed causal factor and any subsequent variables or boxes that the cause is presumed to affect are termed mediators of that causal effect. Mediators (i.e., mechanisms or pathways) are the factors that help explain how social isolation or loneliness affects health outcomes. Most notably, variables in the box labeled pathways are hypothesized to mediate the effect of risk factors or social connections on health impacts, which in turn usually mediate these effects on mortality. Any of the variables in
+              - link "Figure 1-1" [ref=f9e403] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/3#chapter01_pz44-2
+              - text: ", as well as other variables not specified there, may also act as moderators of any of the relationships between variables in the framework. Moderators are the factors that can influence the magnitude or direction of the effect of social isolation or loneliness on health. For example, the existence, nature, or strength of any empirical relationship hypothesized in"
+              - link "Figure 1-1" [ref=f9e404] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/3#chapter01_pz44-2
+              - text: may vary as a function of age, sex/gender, race/ethnicity, socioeconomic position, geographic location, or pre-existing health status.
+            - paragraph [ref=f9e405]:
+              - text: Many of the relationships in the model are potentially bi-directional, as indicated by the thinner arrows. For example, social isolation and loneliness do causally affect health, but they, in turn, may also be affected by health status. That is, a chronic condition, for example, can be both a risk factor for or a consequence of social isolation or loneliness. The committee recognizes that separating discussions of health impacts (see
+              - link "Chapter 3" [ref=f9e406] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/5#49
+              - text: ) from risk and protective factors (see
+              - link "Chapter 4" [ref=f9e407] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/6#63
+              - text: ) can be challenging and confusing given that the same health condition is often discussed in both chapters, albeit for different reasons. Similarly, factors that mediate the relationship between social isolation/loneliness and health can also serve as moderators of those relationships. Therefore, the committee emphasizes
+        - generic [ref=f9e408]:
+          - generic [ref=f9e411]:
+            - generic [ref=f9e412]:
+              - generic [ref=f9e413]: Page 27
+              - generic [ref=f9e414]:
+                - generic:
+                  - link "Share this page" [ref=f9e415] [cursor=pointer]:
+                    - /url: "#"
+                  - link "Cite this page" [ref=f9e418] [cursor=pointer]:
+                    - /url: "#"
+            - generic [ref=f9e422]:
+              - strong [ref=f9e423]: "Suggested Citation:"
+              - text: "\"1 Introduction.\" National Academies of Sciences, Engineering, and Medicine. 2020."
+              - emphasis [ref=f9e424]: "Social Isolation and Loneliness in Older Adults: Opportunities for the Health Care System"
+              - text: ". Washington, DC: The National Academies Press. doi: 10.17226/25663."
+              - generic [ref=f9e425] [cursor=pointer]
+          - generic [ref=f9e428]:
+            - paragraph [ref=f9e429]:
+              - generic "27" [ref=f9e430]:
+                - text: that the conceptual framework serves in part to highlight the complexity of all of these interrelationships. Individual elements of this framework will be discussed in more detail throughout the first half of this report. Specifically, the different aspects of social connections are discussed later in this chapter, mortality is discussed in
+                - link "Chapter 2" [ref=f9e431] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/4#35
+                - text: ", health impacts are discussed in"
+                - link "Chapter 3" [ref=f9e432] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/5#49
+                - text: ", and risk (and protective) factors are discussed in"
+                - link "Chapter 4" [ref=f9e433] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/6#63
+                - text: .
+                - link "Chapter 5" [ref=f9e434] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/7#91
+                - text: discusses the potential role of many variables as mediators or moderators of the relationships among variables in the
+                - link "Figure 1-1" [ref=f9e435] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/3#chapter01_pz44-2
+                - text: framework. All of these concepts and pathways offer opportunities for intervention (both directly and indirectly) by the health care system as a way of improving the ultimate health outcomes.
+            - paragraph [ref=f9e436]: Finally, all of these relationships fit within a typical ecological model of health wherein factors contributing to social isolation and loneliness at the individual level are also potentially affected by the broader contextual factors at the levels of the community and society. Factors that influence social isolation and loneliness at the community level may include factors such as availability of transportation, broadband access, natural disasters, gentrification, and housing displacement. Factors that influence social isolation and loneliness at the society level may, for example, include racism, ageism, changes in family structure (e.g., lower rates of intergenerational living, higher rates of divorce and childlessness), trends in use of technology, and broader laws and policies that may affect social isolation and loneliness.
+            - paragraph [ref=f9e437]:
+              - text: These influences at the level of the community and society are key to understanding risk for social isolation and loneliness and often have a reciprocal relationship with risk and protective factors at the individual level. For example, a key lifestyle feature of Blue Zones (geographic areas characterized by populations with low levels of chronic disease and long lifespans) is social connection. This may be in part due to how the overall social norms of these communities impact individual-level factors for social isolation and loneliness; Blue Zones are often characterized by living in proximity to one’s family, belonging to a faith-based community, and supporting healthy behaviors (e.g., healthy diets and exercise). These ideas are captured in the person-environment fit theory which “focuses on the interaction between the characteristics of the individual and the environment, whereby the individual not only influences his or her environment, but the environment also affects the individual” (
+              - link "Holmbeck et al., 2008" [ref=f9e438] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref436
+              - text: ", p. 33). This may be particularly important for individuals with disabilities for whom their social and physical environments influence participation, engagement, inclusion, and social relationships."
+              - link "Chapter 4" [ref=f9e439] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/6#63
+              - text: provides some insight for the contextual factors at the levels of the community and society, but an extensive discussion of all of these broader concepts and the bio-psycho-social model of health, is beyond the scope of this report.
+            - paragraph [ref=f9e440]: This report focuses on social isolation, loneliness, and several related concepts, each of which contributes to health. However, because social isolation and loneliness are seldom included together in the same study as predictors of health outcomes, the evidence concerning the impact of each on health largely exists in parallel literature bases. Social isolation and loneliness need to continue to be
+        - generic [ref=f9e441]:
+          - generic [ref=f9e444]:
+            - generic [ref=f9e445]:
+              - generic [ref=f9e446]: Page 28
+              - generic [ref=f9e447]:
+                - generic:
+                  - link "Share this page" [ref=f9e448] [cursor=pointer]:
+                    - /url: "#"
+                  - link "Cite this page" [ref=f9e451] [cursor=pointer]:
+                    - /url: "#"
+            - generic [ref=f9e455]:
+              - strong [ref=f9e456]: "Suggested Citation:"
+              - text: "\"1 Introduction.\" National Academies of Sciences, Engineering, and Medicine. 2020."
+              - emphasis [ref=f9e457]: "Social Isolation and Loneliness in Older Adults: Opportunities for the Health Care System"
+              - text: ". Washington, DC: The National Academies Press. doi: 10.17226/25663."
+              - generic [ref=f9e458] [cursor=pointer]
+          - generic [ref=f9e461]:
+            - paragraph [ref=f9e462]: independently examined as potential predictors of the other related aspects of social connection as well as of health outcomes. More importantly, they need to be examined together (1) to discover potential pathways by which one may be operating through, or in combination with, the other in determining health outcomes; and (2) to better estimate the relative strength of their impacts on health outcomes and mortality.
+            - heading "Defining Social Isolation, Loneliness, and Related Aspects of Social Relationships" [level=3] [ref=f9e463]
+            - paragraph [ref=f9e464]:
+              - text: The broad, interdisciplinary scientific fields that together form the modern science of social relationships have used a variety of terms (e.g., social isolation, social connection, social networks, social integration, social support, social exclusion, social deprivation, social relationships, loneliness) to refer to empirical phenomena related to social relationships. Although there are important distinctions among these terms concerning what they describe or measure, they are often, incorrectly, used interchangeably. Some of the key terms that will be used throughout this report are presented in
+              - link "Box 1-3" [ref=f9e465] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/3#chapter01_pAJXk
+              - text: .
+            - complementary [ref=f9e466]:
+              - heading "BOX 1-3 Key Definitions" [level=5] [ref=f9e467]
+              - paragraph [ref=f9e469]: "Loneliness: the perception of social isolation or the subjective feeling of being lonely."
+              - paragraph [ref=f9e470]: "Mediators: also known as mechanisms or pathways; the factors that help explain how social isolation or loneliness affects health outcomes."
+              - paragraph [ref=f9e471]: "Moderators: the factors that can influence the magnitude or direction of the effect of social isolation or loneliness on health."
+              - paragraph [ref=f9e472]: "Social connection: an umbrella term that encompasses the structural, functional, and quality aspects of how individuals connect to each other."
+              - paragraph [ref=f9e473]: "Social isolation: the objective lack of (or limited) social contact with others."
+              - paragraph [ref=f9e474]: "Social support: the actual or perceived availability of resources (e.g., informational, tangible, emotional) from others, typically one’s social network."
+            - heading [level=4]
+        - generic [ref=f9e475]:
+          - generic [ref=f9e478]:
+            - generic [ref=f9e479]:
+              - generic [ref=f9e480]: Page 29
+              - generic [ref=f9e481]:
+                - generic:
+                  - link "Share this page" [ref=f9e482] [cursor=pointer]:
+                    - /url: "#"
+                  - link "Cite this page" [ref=f9e485] [cursor=pointer]:
+                    - /url: "#"
+            - generic [ref=f9e489]:
+              - strong [ref=f9e490]: "Suggested Citation:"
+              - text: "\"1 Introduction.\" National Academies of Sciences, Engineering, and Medicine. 2020."
+              - emphasis [ref=f9e491]: "Social Isolation and Loneliness in Older Adults: Opportunities for the Health Care System"
+              - text: ". Washington, DC: The National Academies Press. doi: 10.17226/25663."
+              - generic [ref=f9e492] [cursor=pointer]
+          - generic [ref=f9e495]:
+            - heading "Social Isolation and Loneliness" [level=4] [ref=f9e496]
+            - paragraph [ref=f9e497]:
+              - text: Social isolation and loneliness represent distinct phenomena. Social isolation typically refers to the objective lack of (or limited) social contact with others, and it is marked by an individual having few social network ties, having infrequent social contact, or, potentially, living alone. Markers of social isolation objectively and quantitatively establish a dearth of social contact and network size. Loneliness refers to the perception of social isolation or the subjective feeling of being lonely that “occurs when there is a significant mismatch or discrepancy between a person’s actual social relations and his or her needed or desired social relations” (
+              - link "Perlman and Peplau, 1998" [ref=f9e498] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref707
+              - text: ", p. 571). While loneliness is subjective, there are measurement tools that can help to quantify the degree of loneliness (see"
+              - link "Chapter 6" [ref=f9e499] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/8#107
+              - text: ). Although those who lack social contact may feel lonely (
+              - link "Yildirim and Kocabiyik, 2010" [ref=f9e500] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref990
+              - text: ), social isolation and loneliness are often not highly correlated (
+              - link "Coyle and Dugan, 2012" [ref=f9e501] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref213
+              - text: ;
+              - link "Perissinotto and Covinsky, 2014" [ref=f9e502] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref705
+              - text: ). Thus, it is important to distinguish between social isolation and loneliness.
+            - heading "Related Aspects of Social Relationships" [level=4] [ref=f9e503]
+            - paragraph [ref=f9e504]:
+              - text: “Social relationships” is arguably the most common term for the connections and intersections among human beings, and it derives from and is employed in broader common usage. The term “social networks” has been used for some time as a similarly broad rubric for the connections among human beings and also other creatures, but it is also used more specifically to refer to the structure and way of analyzing relationship data (
+              - link "Scott, 1988" [ref=f9e505] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref803
+              - text: ).
+              - link "Berkman and Syme (1979)" [ref=f9e506] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref76
+              - text: documented the powerful impact of social relationships on all-cause mortality and hence life expectancy, using the terms “social networks” and also “social integration” to denote the broad pattern of social relationships that they were examining; these terms are now part of the concept of social isolation. Beginning before the Berkman and Syme study and continuing over the succeeding four decades, the study of social relationships and health came to focus on social support. Social support is defined as the actual or perceived availability of resources (e.g., informational, tangible, emotional) from others, typically one’s social network (
+              - link "Cohen and Wills, 1985" [ref=f9e507] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref188
+              - text: ). While each of these terms used to describe social relationships have been linked to important health outcomes, they are not highly correlated, suggesting that each may influence health through different pathways (
+              - link "Cohen et al., 2000" [ref=f9e508] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref190
+              - text: ). Thus, the literature often refers to organizing themes—the structure, functions, and quality of our social relationships—that categorize the broader class of terms that have been termed social relationships by sociologists and epidemiologists or social connection by psychologists (
+              - link "Berkman et al., 2000" [ref=f9e509] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref77
+              - text: ;
+              - link "Holt-Lunstad, 2018b" [ref=f9e510] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref440
+              - text: ;
+              - link "Holt-Lunstad et al., 2017" [ref=f9e511] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref445
+              - text: ;
+              - link "House et al., 1988" [ref=f9e512] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref455
+              - text: ). “Social connection” is an umbrella term that some have proposed using to encompass the different conceptual and measurement approaches represented
+        - generic [ref=f9e513]:
+          - generic [ref=f9e516]:
+            - generic [ref=f9e517]:
+              - generic [ref=f9e518]: Page 30
+              - generic [ref=f9e519]:
+                - generic:
+                  - link "Share this page" [ref=f9e520] [cursor=pointer]:
+                    - /url: "#"
+                  - link "Cite this page" [ref=f9e523] [cursor=pointer]:
+                    - /url: "#"
+            - generic [ref=f9e527]:
+              - strong [ref=f9e528]: "Suggested Citation:"
+              - text: "\"1 Introduction.\" National Academies of Sciences, Engineering, and Medicine. 2020."
+              - emphasis [ref=f9e529]: "Social Isolation and Loneliness in Older Adults: Opportunities for the Health Care System"
+              - text: ". Washington, DC: The National Academies Press. doi: 10.17226/25663."
+              - generic [ref=f9e530] [cursor=pointer]
+          - generic [ref=f9e533]:
+            - 'figure "FIGURE 1-2 Social connection as a multi-factorial construct including structural, functional, and quality components. SOURCE: Holt-Lunstad, 2018a. Reproduced with permission from the Annual Review of Psychology, Volume 69 © 2018 by Annual Reviews, http://www.annualreviews.org." [ref=f9e534]':
+              - img "Image" [ref=f9e535]
+              - generic [ref=f9e537]:
+                - text: "FIGURE 1-2 Social connection as a multi-factorial construct including structural, functional, and quality components. SOURCE:"
+                - link "Holt-Lunstad, 2018a" [ref=f9e538] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref439
+                - text: . Reproduced with permission from the Annual Review of Psychology, Volume 69 © 2018 by Annual Reviews,
+                - link "http://www.annualreviews.org" [ref=f9e539] [cursor=pointer]:
+                  - /url: http://www.annualreviews.org
+                - text: .
+            - paragraph [ref=f9e540]:
+              - generic "30" [ref=f9e541]:
+                - text: in the scientific literature. (
+                - link "Holt-Lunstad, 2018a" [ref=f9e542] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref439
+                - text: ). According to
+                - link "Holt-Lunstad et al. (2017)" [ref=f9e543] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref445
+                - text: ", social connection encompasses the variety of ways one can connect to others socially—through physical, behavioral, social–cognitive, and emotional channels. The extent to which an individual is socially connected takes a multifactorial approach, including (1) [structural aspects] connections to others via the existence of relationships and their roles; (2) [functional aspects] a sense of connection that results from actual or perceived support or inclusion; and (3) [qualitative aspects] the sense of connection to others that is based on positive and negative qualities."
+                - link "Figure 1-2" [ref=f9e544] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/3#chapter01_AxCC
+                - text: shows the three categories of indicators of social connection (i.e., structural, functional, and quality indicators) and provides examples of such indicators.
+            - paragraph [ref=f9e545]: When considering risk factors and protective factors for social isolation and loneliness, having indicators of high social connection is typically considered protective while having indicators of low social connection is typically considered detrimental. Social isolation and loneliness are examples of low social connection, with social isolation being a structural aspect and loneliness a functional aspect. Some indicators of social connection are more stable than others, and the acute or chronic nature of these indicators will influence the degree of risk or protection.
+            - paragraph [ref=f9e546]: The committee recognizes that the literature on social isolation and loneliness uses all of these terms. To describe the evidence base as accurately as possible, when the evidence does not differentiate among or combines several related terms, this report uses the term “social connection” to refer to the various structural, functional, and quality aspects of social relationships. This report uses
+        - generic [ref=f9e547]:
+          - generic [ref=f9e550]:
+            - generic [ref=f9e551]:
+              - generic [ref=f9e552]: Page 31
+              - generic [ref=f9e553]:
+                - generic:
+                  - link "Share this page" [ref=f9e554] [cursor=pointer]:
+                    - /url: "#"
+                  - link "Cite this page" [ref=f9e557] [cursor=pointer]:
+                    - /url: "#"
+            - generic [ref=f9e561]:
+              - strong [ref=f9e562]: "Suggested Citation:"
+              - text: "\"1 Introduction.\" National Academies of Sciences, Engineering, and Medicine. 2020."
+              - emphasis [ref=f9e563]: "Social Isolation and Loneliness in Older Adults: Opportunities for the Health Care System"
+              - text: ". Washington, DC: The National Academies Press. doi: 10.17226/25663."
+              - generic [ref=f9e564] [cursor=pointer]
+          - generic [ref=f9e567]:
+            - paragraph [ref=f9e568]:
+              - generic "31" [ref=f9e569]:
+                - text: the specific terms “social isolation,” “loneliness,” or other terms when the data are specific to these terms.
+                - superscript [ref=f9e570]:
+                  - link "1" [ref=f9e571] [cursor=pointer]:
+                    - /url: https://www.nationalacademies.org/read/25663/chapter/3#chapter01_pz49-6
+            - heading "The Health Care System and Its Providers" [level=3] [ref=f9e572]
+            - paragraph [ref=f9e573]: For the purposes of this study, the committee examined the potential role of the formal health care system and settings where health care services are provided in reducing the impacts of social isolation and loneliness in older adults. The committee considered health care settings broadly to include not just hospital and professional offices, but also other community-based settings where clinical health care services are provided (e.g., homes, long-term care settings). In accordance with discussions with the sponsor in open session at the committee’s first meeting, the committee agreed to consider the settings of care broadly, but to focus on the provision of clinical care by qualified clinicians and health care workers (not including family caregivers). Therefore, the committee used the lens of the health care system itself on the role of health care professionals (e.g., nurses, physicians, social workers), direct care workers (e.g., home health aides, nurse aides, personal care aides), and others involved in the delivery of health care (e.g., community health workers, health care administrators, health information technology professionals). While the committee recognizes the vital importance of family caregivers (the family, friends, and others who provide care, sometimes called informal caregivers) to the delivery of health care as well as their role in mitigating the social isolation and loneliness of their family members, the committee and sponsor agreed that the focus for this study was to gain a comprehensive understanding of how social isolation and loneliness affect the individual and then explore the role of the formal health care system as described above.
+            - paragraph [ref=f9e574]: The committee also limited its examination largely to literature from the United States. The committee based this approach not only on the likely differences among different countries that can affect social isolation and loneliness (e.g., societal norms, cultural expectations, and family structures), but also on the fact that the health care systems in other countries are markedly different from the U.S. health care system, and could make comparisons of clinical approaches quite challenging. However, the committee did review and include notable examples from other countries wherever relevant.
+            - paragraph [ref=f9e575]: Finally, the committee considered general public health principles, including connection to the community and other public health partners, to be considered a part of comprehensive clinical care, especially given that the Statement of Task calls for the committee to consider “opportunities that can be incorporated into health care environments” (e.g., education, tools, public awareness). While the
+            - paragraph [ref=f9e576]: ___________________
+            - paragraph [ref=f9e577]:
+              - superscript [ref=f9e578]:
+                - link "1" [ref=f9e579] [cursor=pointer]:
+                  - /url: https://www.nationalacademies.org/read/25663/chapter/3#chapter01_ADBv
+              - text: While social integration can describe high social connection, low scores on measures of social integration (e.g., on the Berkman–Syme Social Network Index) are frequently used as an indication of social isolation. Thus, the term “social isolation” will also be used to represent these data.
+        - generic [ref=f9e580]:
+          - generic [ref=f9e583]:
+            - generic [ref=f9e584]:
+              - generic [ref=f9e585]: Page 32
+              - generic [ref=f9e586]:
+                - generic:
+                  - link "Share this page" [ref=f9e587] [cursor=pointer]:
+                    - /url: "#"
+                  - link "Cite this page" [ref=f9e590] [cursor=pointer]:
+                    - /url: "#"
+            - generic [ref=f9e594]:
+              - strong [ref=f9e595]: "Suggested Citation:"
+              - text: "\"1 Introduction.\" National Academies of Sciences, Engineering, and Medicine. 2020."
+              - emphasis [ref=f9e596]: "Social Isolation and Loneliness in Older Adults: Opportunities for the Health Care System"
+              - text: ". Washington, DC: The National Academies Press. doi: 10.17226/25663."
+              - generic [ref=f9e597] [cursor=pointer]
+          - generic [ref=f9e600]:
+            - paragraph [ref=f9e601]: committee’s ultimate recommendations are not all explicitly directed to health care professionals and other health care workers, the committee asserts that its recommendations are the ones that would be most helpful in reaching the ultimate goal of improving the role of individuals involved in clinical care in particular to help mitigate the negative health impacts of social isolation and loneliness.
+            - heading "Identifying Populations at Risk" [level=3] [ref=f9e602]
+            - paragraph [ref=f9e603]:
+              - text: Pursuant to its charge, the committee primarily focused its efforts on addressing the health and medical dimensions of loneliness and social isolation as they pertain to adults aged 50 and older. The committee’s work was necessarily limited by the available research on this population. Also in response to the charge, the committee sought to include relevant research pertaining to low-income, underserved, or vulnerable populations. To address these subpopulations of older adults, the committee included available research on specific populations as defined by race, geographic area (e.g., rural versus urban), immigration status, sexual orientation, and other characteristics. Although the research on many of these subpopulations is sparse, examinations of studies focusing on these subpopulations are included throughout the report as part of the evidentiary data for each topic area. A separate section specifically addressing particular subpopulations (i.e., gay, lesbian, and bisexual populations; minorities; immigrants; and victims of elder abuse) is included in
+              - link "Chapters 4" [ref=f9e604] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/6#63
+              - text: and
+              - link "5" [ref=f9e605] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/7#91
+              - text: . However, the committee emphasizes that the literature base specific to at-risk populations is quite sparse, and much more research is needed to determine the risks, impacts, and appropriate interventions for a variety of at-risk subpopulations.
+            - heading "Quality of Available Evidence" [level=3] [ref=f9e606]
+            - paragraph [ref=f9e607]:
+              - text: A significant and robust literature demonstrates the impact of social isolation and loneliness on health and well-being (see
+              - link "Chapters 2" [ref=f9e608] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/4#35
+              - text: and
+              - link "3" [ref=f9e609] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/5#49
+              - text: ). However, the literature on effective interventions, particularly for the role of the health care system, is less robust. The existing studies of interventions vary in their terminology, measures, and measured outcomes. While this variability made comparing the studies and their overall conclusions quite challenging for the committee, the variability can also be a strength in the sense that it makes it possible to look for convergent validity (i.e., robustness of the empirical relationships among conceptual variables even in the face of some variation in measures and study designs; see
+              - link "Lykken, 1968" [ref=f9e610] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref591
+              - text: ) in establishing the effect of social isolation and loneliness on health and well-being.
+            - paragraph [ref=f9e611]:
+              - text: The committee prioritized the available literature according to known principles of evidence-based health research intended to reduce the risk of bias affecting study conclusions (
+              - link "Podsakoff et al., 2003" [ref=f9e612] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/13#backmatter01_ref725
+              - text: ). Important factors include how participants are allocated to different types of interventions, the comparability of
+        - generic [ref=f9e613]:
+          - generic [ref=f9e616]:
+            - generic [ref=f9e617]:
+              - generic [ref=f9e618]: Page 33
+              - generic [ref=f9e619]:
+                - generic:
+                  - link "Share this page" [ref=f9e620] [cursor=pointer]:
+                    - /url: "#"
+                  - link "Cite this page" [ref=f9e623] [cursor=pointer]:
+                    - /url: "#"
+            - generic [ref=f9e627]:
+              - strong [ref=f9e628]: "Suggested Citation:"
+              - text: "\"1 Introduction.\" National Academies of Sciences, Engineering, and Medicine. 2020."
+              - emphasis [ref=f9e629]: "Social Isolation and Loneliness in Older Adults: Opportunities for the Health Care System"
+              - text: ". Washington, DC: The National Academies Press. doi: 10.17226/25663."
+              - generic [ref=f9e630] [cursor=pointer]
+          - generic [ref=f9e633]:
+            - paragraph [ref=f9e634]: study populations, controls for confounding factors, how outcomes are assessed, how representative the study group is of the older U.S. population, and the degree to which statistical analyses help reduce bias.
+            - heading [level=2] [ref=f9e635]:
+              - link "OVERVIEW OF THE COMMITTEE’S REPORT" [ref=f9e636] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/1#content-toc_pz15-8
+            - paragraph [ref=f9e637]:
+              - text: The work of the current committee reinforces, extends, and elaborates on the work of prior National Academies committees.
+              - link "Chapter 2" [ref=f9e638] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/4#35
+              - text: examines the history and context of how social isolation in particular (and loneliness to a lesser extent) came to be recognized as a factor influencing mortality and how social support came to be recognized as a protective factor.
+              - link "Chapter 3" [ref=f9e639] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/5#49
+              - text: summarizes the evidence base for the impacts of social isolation and loneliness on morbidity and quality of life, while
+              - link "Chapter 4" [ref=f9e640] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/6#63
+              - text: summarizes the evidence base for the factors that put people at risk for social isolation and loneliness.
+              - link "Chapter 5" [ref=f9e641] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/7#91
+              - text: discusses the moderators and mediators of the relationships of social isolation and loneliness with health.
+              - link "Chapter 6" [ref=f9e642] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/8#107
+              - text: presents a brief overview of the tools used for measurement and assessment in research settings as well as of the use of information technology to identify individuals at risk for social isolation or loneliness.
+              - link "Chapter 7" [ref=f9e643] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/9#123
+              - text: discusses the role of the health care system specifically in addressing social isolation and loneliness.
+              - link "Chapter 8" [ref=f9e644] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/10#147
+              - text: considers the importance of education and training of the general public and the health care workforce, particularly in raising awareness of the health impacts of social isolation and loneliness.
+              - link "Chapter 9" [ref=f9e645] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/11#171
+              - text: presents an overview of interventions for social isolation and loneliness, focusing on approaches that are most applicable to health care providers and settings.
+              - link "Chapter 10" [ref=f9e646] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/12#221
+              - text: reflects on the principles of dissemination and implementation in order to explore avenues for translating research into practice. The citations for all chapters have been merged into a single reference list that follows
+              - link "Chapter 10" [ref=f9e647] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/12#221
+              - text: .
+              - link "Appendix A" [ref=f9e648] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/14#287
+              - text: provides the agendas of the committee’s open sessions, including the topics and speakers.
+              - link "Appendix B" [ref=f9e649] [cursor=pointer]:
+                - /url: https://www.nationalacademies.org/read/25663/chapter/15#291
+              - text: contains the biographical sketches of the committee members and project staff.
+        - generic [ref=f9e650]:
+          - generic [ref=f9e653]:
+            - generic [ref=f9e654]:
+              - generic [ref=f9e655]: Page 34
+              - generic [ref=f9e656]:
+                - generic:
+                  - link "Share this page" [ref=f9e657] [cursor=pointer]:
+                    - /url: "#"
+                  - link "Cite this page" [ref=f9e660] [cursor=pointer]:
+                    - /url: "#"
+            - generic [ref=f9e664]:
+              - strong [ref=f9e665]: "Suggested Citation:"
+              - text: "\"1 Introduction.\" National Academies of Sciences, Engineering, and Medicine. 2020."
+              - emphasis [ref=f9e666]: "Social Isolation and Loneliness in Older Adults: Opportunities for the Health Care System"
+              - text: ". Washington, DC: The National Academies Press. doi: 10.17226/25663."
+              - generic [ref=f9e667] [cursor=pointer]
+          - paragraph [ref=f9e671]: This page intentionally left blank.
+      - link [ref=f9e672] [cursor=pointer]:
+        - /url: https://www.nationalacademies.org/read/25663/chapter/4
+        - generic [ref=f9e675]:
+          - text: "Next Chapter: 2 Evaluating the Evidence for the Impacts of Social Isolation, Loneliness, and Other Aspects of Social Connection on Mortality"
+          - generic [aria-hidden] [ref=f9e676]: ">>"
+    - generic [ref=f9e678]:
+      - generic [ref=f9e679]:
+        - generic [ref=f9e680]: Subscribe to Emails from the National Academies
+        - generic [ref=f9e681]: Stay up to date on activities, publications, and events by subscribing to email updates.
+      - button "Subscribe" [ref=f9e683] [cursor=pointer]
+    - contentinfo [ref=f9e687]:
+      - generic [ref=f9e688]:
+        - generic [ref=f9e689]:
+          - generic [ref=f9e690]:
+            - link [ref=f9e691] [cursor=pointer]:
+              - /url: https://www.nationalacademies.org
+              - img "National Academies" [ref=f9e692]
+            - paragraph [ref=f9e695]: Driving progress for the benefit of society by providing independent, objective advice to advance science, engineering, and medicine.
+          - navigation "Footer Navigation" [ref=f9e696]:
+            - generic [ref=f9e697]:
+              - heading "The National Academies" [level=3] [ref=f9e698]
+              - list [ref=f9e699]:
+                - listitem [ref=f9e700]:
+                  - link "National Academy of Sciences" [ref=f9e701] [cursor=pointer]:
+                    - /url: https://www.nasonline.org/
+                - listitem [ref=f9e703]:
+                  - link "National Academy of Engineering" [ref=f9e704] [cursor=pointer]:
+                    - /url: https://www.nae.edu/
+                - listitem [ref=f9e706]:
+                  - link "National Academy of Medicine" [ref=f9e707] [cursor=pointer]:
+                    - /url: https://nam.edu/
+                - listitem [ref=f9e709]:
+                  - link "Careers" [ref=f9e710] [cursor=pointer]:
+                    - /url: https://careers.nationalacademies.org/us/en/home
+                - listitem [ref=f9e712]:
+                  - link "National Academies Press (NAP)" [ref=f9e713] [cursor=pointer]:
+                    - /url: https://www.nationalacademies.org/national-academies-press
+                - listitem [ref=f9e715]:
+                  - link "Transportation Research Board Reports" [ref=f9e716] [cursor=pointer]:
+                    - /url: https://www.trb.org/Publications/PubsTRBPublicationsbySeries.aspx
+                - listitem [ref=f9e718]:
+                  - link "MyAcademies Accounts" [ref=f9e719] [cursor=pointer]:
+                    - /url: https://www.nationalacademies.org/myacademies-accounts
+                - listitem [ref=f9e721]:
+                  - link "Contact Us" [ref=f9e722] [cursor=pointer]:
+                    - /url: https://www.nationalacademies.org/contact-us
+            - generic [ref=f9e724]:
+              - heading "Journals and Periodicals" [level=3] [ref=f9e725]
+              - list [ref=f9e726]:
+                - listitem [ref=f9e727]:
+                  - link "PNAS" [ref=f9e728] [cursor=pointer]:
+                    - /url: https://www.pnas.org/
+                - listitem [ref=f9e730]:
+                  - link "PNAS Nexus" [ref=f9e731] [cursor=pointer]:
+                    - /url: https://academic.oup.com/pnasnexus
+                - listitem [ref=f9e733]:
+                  - link "ILAR Journal" [ref=f9e734] [cursor=pointer]:
+                    - /url: https://academic.oup.com/ilarjournal
+                - listitem [ref=f9e736]:
+                  - link "Issues in Science and Technology" [ref=f9e737] [cursor=pointer]:
+                    - /url: https://issues.org/
+                - listitem [ref=f9e739]:
+                  - 'link "Transportation Research Record: Journal of the Transportation Research Board" [ref=f9e740] [cursor=pointer]':
+                    - /url: https://journals.sagepub.com/home/trr
+                - listitem [ref=f9e742]:
+                  - link "TR News" [ref=f9e743] [cursor=pointer]:
+                    - /url: https://trnews.org/
+            - generic [ref=f9e745]:
+              - heading "Visit" [level=3] [ref=f9e746]
+              - list [ref=f9e747]:
+                - listitem [ref=f9e748]:
+                  - link "Visit Us Information" [ref=f9e749] [cursor=pointer]:
+                    - /url: https://www.nationalacademies.org/visit
+                - listitem [ref=f9e751]:
+                  - link "Current Operating Status" [ref=f9e752] [cursor=pointer]:
+                    - /url: https://www.nationalacademies.org/current-operating-status
+                - listitem [ref=f9e754]:
+                  - link "Beckman Center" [ref=f9e755] [cursor=pointer]:
+                    - /url: https://www.nationalacademies.org/beckman-center-ca
+                - listitem [ref=f9e757]:
+                  - link "Archives" [ref=f9e758] [cursor=pointer]:
+                    - /url: https://www.nationalacademies.org/archives
+            - generic [ref=f9e760]:
+              - heading "Legal" [level=3] [ref=f9e761]
+              - list [ref=f9e762]:
+                - listitem [ref=f9e763]:
+                  - link "Policies and Procedures" [ref=f9e764] [cursor=pointer]:
+                    - /url: https://www.nationalacademies.org/policies-and-procedures
+                - listitem [ref=f9e766]:
+                  - link "Legal Information" [ref=f9e767] [cursor=pointer]:
+                    - /url: https://www.nationalacademies.org/legal-information
+                - listitem [ref=f9e769]:
+                  - link "Privacy Statement" [ref=f9e770] [cursor=pointer]:
+                    - /url: https://www.nationalacademies.org/privacy-statement
+                - listitem [ref=f9e772]:
+                  - link "Terms of Use" [ref=f9e773] [cursor=pointer]:
+                    - /url: https://www.nationalacademies.org/terms-of-use
+                - listitem [ref=f9e775]:
+                  - link "Accessibility" [ref=f9e776] [cursor=pointer]:
+                    - /url: https://www.nationalacademies.org/accessibility-statement-of-intent
+        - generic [ref=f9e778]:
+          - paragraph [ref=f9e779]: © 2026 National Academy of Sciences. All Rights Reserved.
+          - generic [ref=f9e780]:
+            - link "Facebook" [ref=f9e781] [cursor=pointer]:
+              - /url: https://www.facebook.com/NationalAcademies/
+            - link "LinkedIn" [ref=f9e784] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/the-national-academies/posts/?feedView=all
+            - link "X" [ref=f9e787] [cursor=pointer]:
+              - /url: https://x.com/TheNASEM
+  - paragraph
+  - generic:
+    - paragraph: Our Publications
+    - paragraph: Explore the Latest News and Stories
+    - paragraph: Right Now & Next Up
+    - paragraph: TRB Webinars
+    - paragraph: Congressional and Government Affairs
+    - paragraph: Based On Science
+    - paragraph: Members
+    - paragraph: Current Operating Status
+  - generic:
+    - paragraph [aria-hidden]
+  - alertdialog "Privacy" [ref=f9e791]:
+    - generic [ref=f9e793]:
+      - paragraph [ref=f9e796]:
+        - text: "This site uses cookies. For more information on cookies visit:"
+        - link "More information about your privacy" [ref=f9e797] [cursor=pointer]:
+          - /url: https://www.nationalacademies.org/legal/privacy
+          - text: https://www.nationalacademies.org/legal/privacy
+      - button "Continue" [ref=f9e800] [cursor=pointer]
+    - button "Close" [ref=f9e802] [cursor=pointer]
+  - navigation [ref=f9e803]:
+    - text:      
+    - list [ref=f9e804]:
+      - listitem [ref=f9e805]:
+        - button [ref=f9e806] [cursor=pointer]
+      - listitem [ref=f9e809]:
+        - button "Previous page" [ref=f9e810] [cursor=pointer]
+        - textbox "#" [ref=f9e815]
+        - button "Next page" [ref=f9e816] [cursor=pointer]
+      - listitem [ref=f9e820]:
+        - button [ref=f9e821] [cursor=pointer]
