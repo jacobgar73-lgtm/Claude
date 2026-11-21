@@ -1,0 +1,28 @@
+/* ==========================================================================
+   About: page-only styles (built from the tokens in styles.css)
+   ========================================================================== */
+
+.about-needs {
+  display: grid;
+  align-self: stretch;
+}
+
+.about-need {
+  padding-block: var(--sp-4);
+  border-top: var(--rule);
+}
+
+.about-need:last-child {
+  border-bottom: var(--rule);
+}
+
+.about-need strong {
+  display: block;
+  font-size: var(--fs-h3);
+  line-height: 1.25;
+}
+
+/* The contact list sits on the dark band. */
+.band--ink .date-list a {
+  color: inherit;
+}

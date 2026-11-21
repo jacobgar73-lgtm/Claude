@@ -1836,6 +1836,11 @@ th {
   white-space: nowrap;
 }
 
+/* In a narrow column the number must still fit on one line. */
+.path .phone-display {
+  font-size: clamp(1.75rem, 0.9rem + 1.9vw, 2.5rem);
+}
+
 .phone-display:hover {
   text-decoration: underline;
   text-decoration-thickness: 3px;

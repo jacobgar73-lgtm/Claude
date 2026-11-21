@@ -1,0 +1,37 @@
+/* ==========================================================================
+   Volunteer: page-only styles (built from the tokens in styles.css)
+   ========================================================================== */
+
+/* Open roles as a ruled grid of plain names. */
+.volunteer-roles {
+  display: grid;
+  gap: 0 var(--sp-6);
+}
+
+.volunteer-role {
+  display: flex;
+  align-items: center;
+  min-height: 3.5rem;
+  border-top: var(--rule);
+  font-weight: var(--fw-bold);
+  line-height: 1.3;
+}
+
+@media (min-width: 40rem) {
+  .volunteer-roles {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 62rem) {
+  .volunteer-roles {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* The action row under the dates keeps its note readable. */
+.chart > .action-row .source {
+  flex: 1 1 18rem;
+  margin: 0;
+  padding: 0;
+}
