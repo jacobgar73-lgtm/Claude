@@ -1,0 +1,47 @@
+{
+  "_how_to_edit": "This is the one place to change numbers, events and contact details. Edit, save, then run: python3 tools/build.py",
+
+  "draft": true,
+
+  "phone": "(956) 320-3378",
+  "email": "Info@LtnTexas.org",
+  "address": "Harlingen, Texas",
+  "instagram_handle": "lovethyneighborrgv",
+  "instagram_url": "https://www.instagram.com/lovethyneighborrgv",
+  "facebook_url": "https://www.facebook.com/",
+  "ein": "36-5150765",
+
+  "point_url": "https://pointapp.org/orgs/9567",
+  "give_url": "",
+  "form_endpoint": "",
+  "analytics_domain": "",
+
+  "stats_as_of": "mid-November 2026",
+  "stats": [
+    { "value": 438, "prefix": "", "suffix": "+", "label": "volunteer hours given", "label_es": "horas de voluntariado" },
+    { "value": 20, "prefix": "", "suffix": "", "label": "service events held", "label_es": "eventos de servicio" },
+    { "value": 31, "prefix": "", "suffix": "", "label": "neighbors in our volunteer network", "label_es": "vecinos en nuestra red de voluntarios" },
+    { "value": 15370, "prefix": "$", "suffix": "", "label": "value of volunteer time", "label_es": "valor del tiempo de voluntariado" }
+  ],
+
+  "seniors_goal": 24,
+  "seniors_served": 9,
+  "seniors_served_is_sample": true,
+
+  "campaign": {
+    "enabled": true,
+    "text": "Angels for Amigos: gift sorting is Sunday, December 6.",
+    "text_es": "Angels for Amigos: clasificamos regalos el domingo 6 de diciembre.",
+    "link_text": "Sign up to help",
+    "link_text_es": "Apúntate para ayudar",
+    "url": "https://pointapp.org/orgs/9567"
+  },
+
+  "events_checked": "November 20, 2026",
+  "events": [
+    { "date": "2026-11-28", "time": "9:00 AM", "title": "Restore Day yard cleanup", "title_es": "Día de limpieza de patio", "place": "Harlingen", "open": 8 },
+    { "date": "2026-12-05", "time": "6:00 AM", "title": "GoodWorks Market booth", "title_es": "Puesto de GoodWorks Market", "place": "Harlingen Downtown Market", "open": 5 },
+    { "date": "2026-12-06", "time": "3:00 PM", "title": "Angels for Amigos gift sorting", "title_es": "Clasificación de regalos, Angels for Amigos", "place": "Harlingen", "open": 22 },
+    { "date": "2026-12-19", "time": "9:00 AM", "title": "Restore Day yard cleanup", "title_es": "Día de limpieza de patio", "place": "Harlingen", "open": 7 }
+  ]
+}

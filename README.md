@@ -1,59 +1,82 @@
-# Love Thy Neighbor: website redesign
+# Love Thy Neighbor website
 
-A redesign of [ltntexas.org](https://www.ltntexas.org) as a small static site: seven pages, one stylesheet, no framework.
+The site for Love Thy Neighbor Inc., Harlingen, Texas, built to the LTN Website Brief (November 24, 2026).
 
-**Direction:** clean and minimal, led by data and by real photographs of the crews at work. Warm paper tones, one typeface (Archivo), and Love Thy Neighbor red kept for two jobs: giving, and the bar that is the point of a chart.
+It has one job: inform visitors, collect referrals for seniors, and turn visitors into volunteers.
 
 ## Pages
 
-| Page | What it is for |
-| --- | --- |
-| `index.html` | Who we are, why the work is needed (charts), where we are today (timeline), the programs, and three ways in |
-| `get-help.html` | For seniors, families and referrers: the phone number, what is offered today, the referral form, Spanish help |
-| `our-work.html` | The three programs, mostly in photographs and diagrams |
-| `impact.html` | The data page: the need in Cameron County, what has been done, the activity log |
-| `volunteer.html` | Open dates, ways to serve, what to expect, sign-up |
-| `about.html` | The story, the mission, the team, partners, contact |
-| `donate.html` | What a gift does, wish lists, other ways to give |
+| Page | File | Main action |
+| --- | --- | --- |
+| Home | `index.html` | Refer a Neighbor, Volunteer |
+| Programs | `programs.html` | Volunteer |
+| Get Involved | `get-involved.html` | Sign up on POINT |
+| Refer a Neighbor | `refer.html` | Submit the form |
+| Give | `give.html` | Give or contact us |
+| About | `about.html` | Contact us |
+
+Spanish versions of Home, Refer a Neighbor and Get Involved are in `es/`. The language switch is in the footer.
+
+## Change a number, an event or the phone number
+
+Everything that changes often is in one file: `content/site.json`.
+
+- The four numbers on Home (`stats`) and their date (`stats_as_of`)
+- Seniors served and the goal (`seniors_served`, `seniors_goal`)
+- Upcoming events (`events`). Past dates drop off by themselves at the next build.
+- Phone, email, address, Instagram, POINT link
+- The seasonal banner on Home (`campaign`). Set `enabled` to `false` when the campaign ends.
+
+Then rebuild:
+
+```bash
+python3 tools/build.py
+```
+
+```bash
+python3 -m http.server 8000
+```
+
+Open http://localhost:8000 to preview.
 
 ## How it is put together
 
 ```
-src/pages/*.html   page bodies (edit these)
-tools/build.py     wraps each body in the shared head, header and footer
-styles.css         the whole design system: tokens first, then components
-main.js            menu, chart animation, tooltips, form hand-off
-css/<page>.css     optional small page-specific styles
-assets/img/        photographs and logos
+content/site.json     numbers, events, contact details, links
+src/pages/*.html      English page bodies (edit these, not the files at the root)
+src/pages/es/*.html   Spanish page bodies
+tools/build.py        adds the shared head, header and footer, fills in site.json
+styles.css            the whole look: colors and type first, then components
+main.js               menu, counting numbers, before/after slider, giving picker, form
+assets/img/           photographs and the logo
 ```
 
-Build and preview:
-
-```bash
-python3 tools/build.py          # writes the pages at the repository root
-python3 -m http.server 8000     # then open http://localhost:8000
-```
+The logo (`assets/img/ltn-logo.png`) is the supplied artwork, unchanged. It was only trimmed and given a transparent background.
 
 ## Sample content
 
-The client asked for sample figures while the design is settled. Every invented number, quote or amount is wrapped in `data-placeholder`, so it can be found with one search:
+Anything invented is wrapped in `data-placeholder` and shows a dotted underline while `"draft": true` in `content/site.json`. Find every one with:
 
 ```bash
 grep -rn "data-placeholder" src/pages/
 ```
 
-While `DRAFT = True` in `tools/build.py`, sample content gets a dotted underline and each section shows a small note. Set `DRAFT = False` once the real records are in.
+Set `"draft": false` only when that search comes back empty.
 
-The statistics about the need are real. Each was reproduced from its primary source on November 20, 2026 (U.S. Census Bureau American Community Survey 2020 to 2024, the U.S. Surgeon General's 2023 advisory, the National Academies, CDC and AARP) and carries its source link on the page.
+The four POINT numbers (438+ hours, 20 events, 31 volunteers, $15,370 in volunteer time) are real, as of mid-November 2026.
 
-## Before going live
+## Before launch
 
-- Replace every sample figure with program records, then turn draft mode off.
-- Connect the two forms (referral, volunteer) to a real form service. They currently open the visitor's email app.
-- Confirm captions: the clean-up photographs are captioned "Harlingen, 2026".
-- Have a native speaker review the Spanish on the Get help page.
-- Confirm the lines marked "to confirm" on the About page (everyone is a volunteer; help is offered regardless of faith).
+1. **Referral form.** Set `form_endpoint` in `content/site.json` to a form service. Until then the form opens the visitor's email app, which is not good enough for launch.
+2. **Giving.** Set `give_url` once the board chooses a giving tool. Until then the Give button starts an email.
+3. **Events.** The list is typed by hand in `site.json`. Replace it with the POINT embed on Get Involved if POINT provides one.
+4. **Open decisions from the brief.** Mission statement, phone number, Instagram handle, public address, seniors served so far.
+5. **Photos.** A matched before and after pair, a GoodWorks Market photo, and signed releases for any photo that shows a senior. No senior appears on the site today.
+6. **Partners.** Names are shown as text. Add logos only with written permission.
+7. **Spanish.** Have a native speaker from the Valley read the three Spanish pages.
+8. **Visit tracking.** Set `analytics_domain` to turn on Plausible, or add the tracker of your choice in `tools/build.py`.
+9. **Facebook link.** `facebook_url` is a placeholder.
 
 ## Photography
 
-Restore, Renew & Rebuild clean-up photographs: Garcia Photography Co. Fellowship photographs: Love Thy Neighbor volunteers. The hero video from the old site is not used.
+Restore Day photographs: Garcia Photography Co. Other photographs: Love Thy Neighbor volunteers. No stock images.

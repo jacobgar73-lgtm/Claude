@@ -1,0 +1,171 @@
+<!-- title: Referir a un vecino | Limpieza de patios gratis para personas mayores en Harlingen | description: ¿Conoce a una persona mayor de bajos ingresos en Harlingen, Texas que ya no puede con su patio? Refiérala a Love Thy Neighbor. El formulario toma dos minutos y la ayuda es gratis. | nav: refer -->
+    <section class="page-hero">
+      <div class="container container--narrow">
+        <p class="eyebrow">Referir a un vecino</p>
+        <h1>¿Conoce a una persona mayor que necesita ayuda?</h1>
+        <p class="lead">Cuéntenos de ella. Puede referir a su mamá o papá, a un vecino, a un cliente o a usted mismo. La ayuda es gratis.</p>
+        <p class="notice"><strong>Por ahora, solo en Harlingen.</strong> Servimos casas dentro de la ciudad de Harlingen, Texas. Esperamos llegar pronto a más partes del Valle.</p>
+      </div>
+    </section>
+
+    <section class="section section--tight" aria-labelledby="checks-title">
+      <div class="container container--narrow">
+        <h2 id="checks-title" class="h3">Tres preguntas rápidas</h2>
+        <ol class="checks" role="list">
+          <li><span class="checks__q">¿La casa está en Harlingen?</span><span class="checks__a">Servimos casas dentro de los límites de la ciudad.</span></li>
+          <li><span class="checks__q">¿El dueño es una persona mayor?</span><span class="checks__a">Servimos a personas mayores de bajos ingresos, <span data-placeholder title="Edad de muestra, por confirmar">de 60 años o más</span>.</span></li>
+          <li><span class="checks__q">¿Es limpieza de patio o del exterior?</span><span class="checks__a">Patios crecidos, poda de árboles, escombros y peligros afuera de la casa.</span></li>
+        </ol>
+        <p>¿Tres veces sí? Llene el formulario. ¿No está seguro? Mándelo de todos modos, o llame al <a href="tel:{{phone_tel}}">{{phone}}</a>.</p>
+      </div>
+    </section>
+
+    <section class="section section--sand" id="form" aria-labelledby="form-title">
+      <div class="container container--narrow">
+        <header class="section__head section__head--left">
+          <h2 id="form-title">Formulario de referencia</h2>
+          <p>Unos dos minutos. Los campos con * son obligatorios.</p>
+        </header>
+        <form class="form" data-form="referral" data-endpoint="{{form_endpoint}}" data-mailto="{{email}}" data-subject="Referir a un vecino (español)" method="post" novalidate>
+          <fieldset>
+            <legend>Sobre usted</legend>
+            <div class="field">
+              <label for="ref-name">Su nombre *</label>
+              <input id="ref-name" name="Referrer name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="ref-phone">Su teléfono *</label>
+                <input id="ref-phone" name="Referrer phone" type="tel" autocomplete="tel" inputmode="tel" required>
+              </div>
+              <div class="field">
+                <label for="ref-email">Su correo electrónico</label>
+                <input id="ref-email" name="Referrer email" type="email" autocomplete="email">
+              </div>
+            </div>
+            <div class="field">
+              <label for="ref-relation">¿De dónde conoce a la persona mayor?</label>
+              <select id="ref-relation" name="Relationship">
+                <option value="Family member">Soy familiar</option>
+                <option value="Neighbor or friend">Soy vecino o amigo</option>
+                <option value="Church, agency or caseworker">Iglesia, agencia o trabajador social</option>
+                <option value="I am the senior">Yo soy la persona mayor</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Sobre la persona mayor</legend>
+            <div class="field">
+              <label for="sen-name">Nombre de la persona mayor *</label>
+              <input id="sen-name" name="Senior name" type="text" required>
+            </div>
+            <div class="field">
+              <label for="sen-address">Dirección de la casa en Harlingen *</label>
+              <input id="sen-address" name="Address" type="text" autocomplete="off" required>
+              <p class="hint">La usamos solo para planear la visita. Nunca la publicamos.</p>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="sen-language">Idioma que prefiere</label>
+                <select id="sen-language" name="Language">
+                  <option value="Spanish">Español</option>
+                  <option value="English">Inglés</option>
+                  <option value="Both">Los dos</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="sen-program">Programa</label>
+                <select id="sen-program" name="Program">
+                  <option value="R3 yard and exterior cleanup">R3, limpieza de patio y exterior</option>
+                  <option value="Adopt-A-Neighbor">Adopt-A-Neighbor</option>
+                  <option value="Hearts &amp; Hands Fellowship">Hearts &amp; Hands Fellowship</option>
+                  <option value="Not sure">No estoy seguro</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="sen-details">¿Qué está pasando? *</label>
+              <textarea id="sen-details" name="Details" rows="5" required></textarea>
+              <p class="hint">Por ejemplo: el patio de atrás está muy crecido y hay una rama caída junto a la puerta.</p>
+            </div>
+            <div class="field field--check">
+              <input id="sen-knows" name="Senior knows about this referral" type="checkbox" value="Yes">
+              <label for="sen-knows">La persona mayor sabe que estoy mandando esto.</label>
+            </div>
+          </fieldset>
+
+          <p class="visually-hidden" aria-hidden="true"><label>Deje esto vacío <input name="_gotcha" tabindex="-1" autocomplete="off"></label></p>
+
+          <button class="button button--primary button--large" type="submit">Enviar referencia</button>
+          <p class="form__status" role="status" aria-live="polite" data-success="Gracias. Recibimos su referencia y le llamaremos en pocos días." data-fallback="Su aplicación de correo debe abrirse con la referencia ya escrita. Oprima enviar para terminar. Si no se abrió nada, llame al {{phone}}." data-error="Por favor llene los campos marcados con una estrella."></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="next-title">
+      <div class="container">
+        <header class="section__head">
+          <h2 id="next-title">Qué pasa después</h2>
+        </header>
+        <ol class="steps" role="list">
+          <li class="step">
+            <h3><span class="step__n">1</span> Llamamos</h3>
+            <p>Alguien de Love Thy Neighbor le llama <span data-placeholder title="Tiempo de muestra">en un plazo de tres días hábiles</span>.</p>
+          </li>
+          <li class="step">
+            <h3><span class="step__n">2</span> Visitamos</h3>
+            <p>Recorremos el patio con el dueño y acordamos lo que hará el grupo.</p>
+          </li>
+          <li class="step">
+            <h3><span class="step__n">3</span> Un grupo restaura</h3>
+            <p>Los voluntarios llegan un sábado, hacen el trabajo y se llevan todo.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--sand" aria-labelledby="faq-title">
+      <div class="container container--narrow">
+        <header class="section__head section__head--left">
+          <h2 id="faq-title">Preguntas de las familias</h2>
+        </header>
+        <div class="faq">
+          <details>
+            <summary>¿Cuánto cuesta?</summary>
+            <p>Nada. El trabajo lo hacen voluntarios y lo pagan donantes, socios y una subvención de la ciudad.</p>
+          </details>
+          <details>
+            <summary>¿Quién califica?</summary>
+            <p>Personas mayores de bajos ingresos que son dueñas de una casa en Harlingen y viven en ella. Si no está seguro, mande el formulario y lo vemos juntos.</p>
+          </details>
+          <details>
+            <summary>¿Qué trabajo hacen?</summary>
+            <p>Limpiamos patios crecidos, podamos árboles, nos llevamos los escombros y quitamos peligros afuera de la casa.</p>
+          </details>
+          <details>
+            <summary>¿Qué no pueden hacer?</summary>
+            <p>Todavía no hacemos reparaciones de techo, de estructura, de interiores ni de moho. Tampoco somos un servicio regular de corte de pasto. Si no podemos ayudar, trataremos de decirle quién sí puede.</p>
+          </details>
+          <details>
+            <summary>¿Cuánto tarda?</summary>
+            <p>Llamamos <span data-placeholder title="Tiempo de muestra">en un plazo de tres días hábiles</span>. Los grupos salen los sábados, así que la mayoría de las casas se programan <span data-placeholder title="Tiempo de muestra">en cuatro a seis semanas</span>.</p>
+          </details>
+          <details>
+            <summary>¿Puedo referir a alguien sin decirle?</summary>
+            <p>Por favor hable primero con la persona si puede. Nunca llegamos sin el permiso del dueño.</p>
+          </details>
+          <details>
+            <summary>¿Van a compartir fotos de la casa?</summary>
+            <p>Solo con un permiso firmado. Nunca mostramos números de casa, letreros de calles ni apellidos.</p>
+          </details>
+          <details>
+            <summary>¿La persona tiene que compartir su fe?</summary>
+            <p>No. Ayudamos a los vecinos porque son vecinos.</p>
+          </details>
+        </div>
+        <div class="section__action section__action--left">
+          <a class="button button--primary" href="#form">Ir al formulario</a>
+        </div>
+      </div>
+    </section>

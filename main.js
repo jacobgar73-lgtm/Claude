@@ -1,99 +1,126 @@
-/* Love Thy Neighbor: small behaviours. The site works fully without this file. */
+/* Love Thy Neighbor: menu, counting numbers, before/after slider, giving picker, referral form. */
 (function () {
   'use strict';
 
-  /* Mobile menu */
+  // Mobile menu
   var toggle = document.querySelector('.menu-toggle');
   var nav = document.getElementById('site-nav');
   if (toggle && nav) {
     toggle.addEventListener('click', function () {
-      var open = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', String(!open));
-      nav.toggleAttribute('data-open', !open);
+      var open = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(open));
     });
-    document.addEventListener('keydown', function (event) {
-      if (event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && nav.classList.contains('is-open')) {
+        nav.classList.remove('is-open');
         toggle.setAttribute('aria-expanded', 'false');
-        nav.removeAttribute('data-open');
         toggle.focus();
       }
     });
   }
 
-  /* Chart marks grow from their baseline the first time a chart is seen. */
-  var charts = document.querySelectorAll('[data-animate]');
-  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (!('IntersectionObserver' in window) || reduce) {
-    charts.forEach(function (el) { el.classList.add('is-in'); });
-  } else {
-    var seen = new IntersectionObserver(function (entries) {
+  // Numbers that count up once, when they scroll into view.
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var counters = document.querySelectorAll('[data-count]');
+  function show(el, n) {
+    el.textContent = (el.dataset.prefix || '') + Math.round(n).toLocaleString('en-US') + (el.dataset.suffix || '');
+  }
+  if (counters.length && !reduced && 'IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-in');
-          seen.unobserve(entry.target);
+        if (!entry.isIntersecting) return;
+        var el = entry.target;
+        var end = Number(el.dataset.count);
+        var start = null;
+        io.unobserve(el);
+        function step(ts) {
+          if (start === null) start = ts;
+          var p = Math.min((ts - start) / 1200, 1);
+          show(el, end * (1 - Math.pow(1 - p, 3)));
+          if (p < 1) requestAnimationFrame(step);
         }
+        requestAnimationFrame(step);
       });
-    }, { threshold: 0.25 });
-    charts.forEach(function (el) { seen.observe(el); });
+    }, { threshold: 0.4 });
+    counters.forEach(function (el) { io.observe(el); });
   }
 
-  /* Tooltip on chart marks. Every value is also printed beside its mark. */
-  var tip = null;
-  function showTip(target, x, y) {
-    if (!tip) {
-      tip = document.createElement('div');
-      tip.className = 'tip';
-      tip.setAttribute('role', 'tooltip');
-      document.body.appendChild(tip);
-    }
-    var parts = String(target.getAttribute('data-tip')).split('|');
-    tip.textContent = '';
-    var strong = document.createElement('strong');
-    strong.textContent = parts[0].trim();
-    tip.appendChild(strong);
-    if (parts[1]) tip.appendChild(document.createTextNode(parts[1].trim()));
-    tip.hidden = false;
-    var half = tip.offsetWidth / 2 + 8;
-    var left = Math.min(Math.max(x, half), document.documentElement.clientWidth - half);
-    tip.style.left = left + window.scrollX + 'px';
-    tip.style.top = y + window.scrollY + 'px';
-  }
-  function hideTip() { if (tip) tip.hidden = true; }
-  document.querySelectorAll('[data-tip]').forEach(function (el) {
-    el.addEventListener('pointermove', function (event) { showTip(el, event.clientX, event.clientY); });
-    el.addEventListener('pointerleave', hideTip);
-    el.addEventListener('focus', function () {
-      var box = el.getBoundingClientRect();
-      showTip(el, box.left + box.width / 2, box.top);
+  // Before and after slider
+  document.querySelectorAll('[data-ba]').forEach(function (ba) {
+    var frame = ba.querySelector('.ba__frame');
+    var range = ba.querySelector('.ba__range');
+    range.addEventListener('input', function () {
+      frame.style.setProperty('--pos', range.value + '%');
     });
-    el.addEventListener('blur', hideTip);
   });
 
-  /* Forms: there is no server yet, so a form opens the visitor's email app with
-     the answers filled in. Replace data-mailto with a real form service before launch. */
-  document.querySelectorAll('form[data-mailto]').forEach(function (form) {
-    form.addEventListener('submit', function (event) {
-      event.preventDefault();
-      if (typeof form.reportValidity === 'function' && !form.reportValidity()) return;
-      var lines = [];
-      Array.prototype.forEach.call(form.elements, function (el) {
-        if (!el.name || !el.value) return;
-        if ((el.type === 'radio' || el.type === 'checkbox') && !el.checked) return;
-        var label = el.getAttribute('data-label') || el.name;
-        lines.push(label + ': ' + el.value);
-      });
-      var href = 'mailto:' + form.getAttribute('data-mailto') +
-        '?subject=' + encodeURIComponent(form.getAttribute('data-subject') || 'Message from the website') +
-        '&body=' + encodeURIComponent(lines.join('\n'));
-      var status = form.querySelector('.form__status');
-      if (status) {
-        status.hidden = false;
-        status.textContent = 'Your email app should open with this message ready to send. If it does not, call (956) 320-3378 or write to Info@LtnTexas.org.';
+  // Giving picker: frequency and amount update the button label and link.
+  document.querySelectorAll('[data-give]').forEach(function (box) {
+    var label = box.querySelector('[data-give-label]');
+    var button = box.querySelector('[data-give-button]');
+    var base = button.getAttribute('href');
+    var monthly = document.documentElement.lang === 'es' ? 'al mes' : 'monthly';
+    var once = document.documentElement.lang === 'es' ? 'una vez' : 'one time';
+    function update() {
+      var freq = box.querySelector('[data-frequency].is-active').dataset.frequency;
+      var amount = box.querySelector('[data-amount].is-active').dataset.amount;
+      label.textContent = '$' + amount + ' ' + (freq === 'monthly' ? monthly : once);
+      if (base.indexOf('mailto:') === 0) {
+        button.href = base.split('?')[0] + '?subject=' + encodeURIComponent('I would like to give $' + amount + ' ' + freq);
+      } else {
+        button.href = base + (base.indexOf('?') > -1 ? '&' : '?') + 'amount=' + amount + '&frequency=' + freq;
       }
-      window.location.href = href;
+    }
+    box.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-frequency], [data-amount]');
+      if (!b) return;
+      var group = b.hasAttribute('data-frequency') ? '[data-frequency]' : '[data-amount]';
+      box.querySelectorAll(group).forEach(function (x) {
+        x.classList.toggle('is-active', x === b);
+        if (x.hasAttribute('aria-pressed')) x.setAttribute('aria-pressed', String(x === b));
+      });
+      update();
     });
+    update();
   });
 
-  var year = document.getElementById('year');
-  if (year) year.textContent = String(new Date().getFullYear());
+  // Referral form. Posts to the form service set in content/site.json (form_endpoint).
+  // Until one is set, it opens the visitor's email app with the answers filled in.
+  document.querySelectorAll('[data-form]').forEach(function (form) {
+    var status = form.querySelector('.form__status');
+    function say(key, isError) {
+      status.textContent = status.dataset[key];
+      status.classList.toggle('is-error', !!isError);
+    }
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var firstBad = null;
+      form.querySelectorAll('[required]').forEach(function (f) {
+        var bad = !f.value.trim();
+        f.setAttribute('aria-invalid', String(bad));
+        if (bad && !firstBad) firstBad = f;
+      });
+      if (firstBad) { say('error', true); firstBad.focus(); return; }
+      if (form.elements._gotcha && form.elements._gotcha.value) return; // spam trap
+
+      var data = new FormData(form);
+      data.delete('_gotcha');
+      var endpoint = form.dataset.endpoint;
+      if (endpoint) {
+        fetch(endpoint, { method: 'POST', body: data, headers: { Accept: 'application/json' } })
+          .then(function (r) { if (!r.ok) throw new Error(); form.reset(); say('success'); })
+          .catch(function () { openMail(data); });
+      } else {
+        openMail(data);
+      }
+    });
+    function openMail(data) {
+      var lines = [];
+      data.forEach(function (value, key) { lines.push(key + ': ' + value); });
+      window.location.href = 'mailto:' + form.dataset.mailto +
+        '?subject=' + encodeURIComponent(form.dataset.subject) +
+        '&body=' + encodeURIComponent(lines.join('\n'));
+      say('fallback');
+    }
+  });
 })();
